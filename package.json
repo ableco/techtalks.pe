@@ -1,0 +1,22 @@
+{
+  "name": "techtalks.pe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sergiodxa/techtalks.pe.git",
+  "author": "Sergio Xalambrí <sergio@able.co>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@rehooks/document-visibility": "^1.2.0",
+    "classnames": "^2.2.6",
+    "next": "^7.0.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-spring": "^6.1.10"
+  }
+}
