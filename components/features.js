@@ -14,16 +14,24 @@ function Features() {
           <div className="column">
             <H3>Comunidad de Tecnología</H3>
             <p>
-              Como a tí, nos encanta la tecnología y hablar de ella, puedes formar parte de nuestra comunidad en Spectrum donde puedes encontrarnos todos los días para seguir hablando.
+              Como a tí, nos encanta la tecnología y hablar de ella, puedes
+              formar parte de nuestra comunidad en Spectrum donde puedes
+              encontrarnos todos los días para seguir hablando.
             </p>
-            <Button href="https://spectrum.chat/tech-talks/">Únete a nuestra comunidad</Button>
+            <Button href="https://spectrum.chat/tech-talks/">
+              Únete a nuestra comunidad
+            </Button>
           </div>
           <div className="column">
             <H3>Espacio Libre y Abierto</H3>
             <p>
-              Somos una comunidad con ganas de aprender siempre abierta a nuevas propuesta de charlas. Si hay algo en lo que eres experto o estás aprendiendo, la mejor forma de aprender es enseñar.
+              Somos una comunidad con ganas de aprender siempre abierta a nuevas
+              propuesta de charlas. Si hay algo en lo que eres experto o estás
+              aprendiendo, la mejor forma de aprender es enseñar.
             </p>
-            <Button href="https://goo.gl/forms/0XRxomZaK9gK13F03">Propón una charla</Button>
+            <Button href="https://goo.gl/forms/0XRxomZaK9gK13F03">
+              Propón una charla
+            </Button>
           </div>
         </div>
       </Wrapper>
@@ -62,7 +70,7 @@ function Features() {
         }
       `}</style>
     </Section>
-  )
+  );
 }
 
 export default Features;

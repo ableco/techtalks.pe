@@ -10,7 +10,7 @@ function Hero() {
       <Name />
       <Slogan />
       <div className="button-container">
-        <Button href="/cfp" invert>
+        <Button href="https://goo.gl/forms/0XRxomZaK9gK13F03" invert>
           Dar una charla
         </Button>
       </div>

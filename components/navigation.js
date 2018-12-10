@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { withRouter } from "next/router";
 import cn from "classnames";
+import { parse } from "url";
 
 import IconSpectrum from "./icons/spectrum";
 
@@ -10,7 +11,7 @@ const mainLinks = [
   {
     content: "Inicio",
     href: "/",
-    title: "Ir a la página principal",
+    title: "Ir a la página principal"
   },
   {
     content: "Dar una charla",
@@ -28,48 +29,29 @@ const extraLinks = [
   },
   {
     content: <IconSpectrum />,
-    href: "https://spectrum.chat/tech-talks/",
+    href: "https://spectrum.chat/tech-talks-pe/",
     title: "Únete a la comunidad de Tech Talks en Spectrum",
     badge: true
   }
 ];
 
-function List({ data, current }) {
-  return (
-    <ul className="list">
-      {data.map(link => (
-        <li className="item" key={link.href}>
-          <Link href={link.href}>
-            <a className={"link" + (current === link.href ? ' is-active' : '')} title={link.title}>
-              <span className={cn({ long: !!link.short })}>{link.content}</span>
-              {link.short && <span className="short">{link.short}</span>}
-              {link.badge && <Badge />}
-            </a>
-          </Link>
-        </li>
-      ))}
-
+function Item({ href, title, short, content, badge, current }) {
+  const a = (
+    <a
+      href={href}
+      className={"link" + (current === href ? " is-active" : "")}
+      title={title}
+    >
+      <span className={cn({ long: !!short })}>{content}</span>
+      {short && <span className="short">{short}</span>}
+      {badge && <Badge />}
       <style jsx>{`
-        .list {
-          padding-left: 0;
-          list-style-type: none;
-          display: flex;
-        }
-
-        .item {
-          display: inline-flex;
-          margin-right: 1rem;
-        }
-        .item:last-of-type {
-          margin-right: 0;
-        }
-
         .link {
           color: #757575;
           text-decoration: none;
           transition: color 0.2s ease;
           position: relative;
-          padding: .25em;
+          padding: 0.25em;
         }
         .link:hover {
           color: black;
@@ -87,6 +69,39 @@ function List({ data, current }) {
           .long {
             display: none;
           }
+        }
+      `}</style>
+    </a>
+  );
+
+  return (
+    <li className="item">
+      {parse(href).hostname === null ? <Link href={href}>{a}</Link> : a}
+      <style jsx>{`
+        .item {
+          display: inline-flex;
+          margin-right: 1rem;
+        }
+        .item:last-of-type {
+          margin-right: 0;
+        }
+      `}</style>
+    </li>
+  );
+}
+
+function List({ data, current }) {
+  return (
+    <ul className="list">
+      {data.map(link => (
+        <Item {...link} current={current} key={link.href} />
+      ))}
+
+      <style jsx>{`
+        .list {
+          padding-left: 0;
+          list-style-type: none;
+          display: flex;
         }
       `}</style>
     </ul>
