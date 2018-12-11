@@ -8,7 +8,7 @@ function Features() {
     <Section id="features" inverted>
       <Wrapper center>
         <header>
-          <H2 style={{ margin: 0 }}>¿Por qué ser parte de Tech Talks?</H2>
+          <H2 style={{ margin: 0, marginBottom: "1em" }}>¿Por qué ser parte de Tech Talks?</H2>
         </header>
         <div className="row">
           <div className="column">
@@ -43,8 +43,8 @@ function Features() {
         }
         .column {
           flex: 1;
-          margin: 0 1em;
-          text-align: left;
+          margin: 0 2em;
+          text-align: justify;
         }
         .column:first-of-type {
           margin-left: 0;
