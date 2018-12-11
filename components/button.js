@@ -14,7 +14,7 @@ export function LinkButton({
     <a href={href} className={cn(className, "button", { invert })} {...props}>
       {children}
       <style jsx>{`
-      .button {
+        .button {
           display: inline-block;
           font-size: 1em;
           cursor: pointer;
@@ -53,7 +53,11 @@ export function LinkButton({
   );
 
   if (parse(href).hostname === null) {
-    return <Link href={href} as={as}>{a}</Link>;
+    return (
+      <Link href={href} as={as}>
+        {a}
+      </Link>
+    );
   }
 
   return a;
