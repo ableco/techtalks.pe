@@ -11,7 +11,7 @@ function Hero() {
       <Slogan />
       <div className="button-container">
         <Button href="https://goo.gl/forms/0XRxomZaK9gK13F03" invert>
-          Dar una charla
+          DAR UNA CHARLA
         </Button>
       </div>
       <style jsx>{`
@@ -19,6 +19,7 @@ function Hero() {
           background-color: white;
           background-image: radial-gradient(circle, #D7D7D7, #D7D7D7 1px, #FFF 1px, #FFF);
           background-size: 28px 28px;
+          box-sizing: border-box;
           height: 50vh;
           min-height: 400px;
           text-align: center;
@@ -31,14 +32,14 @@ function Hero() {
         }
         .button-container {
           position: absolute;
-          bottom: 3em;
+          bottom: 5vh;
           left: 0;
           right: 0;
           text-align: center;
         }
         @media (max-width: 60em) {
           .button-container {
-            bottom: 1.5em;
+            bottom: 5vh;
           }
         }
       `}</style>
