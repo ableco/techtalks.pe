@@ -18,7 +18,7 @@ function Features() {
               formar parte de nuestra comunidad en Spectrum donde puedes
               encontrarnos todos los días para seguir hablando.
             </p>
-            <Button href="https://spectrum.chat/tech-talks/">
+            <Button href="https://spectrum.chat/tech-talks-pe/">
               Únete a nuestra comunidad
             </Button>
           </div>
