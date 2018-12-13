@@ -1,6 +1,6 @@
 import { memo } from "react";
 import css from "styled-jsx/css";
-import Name from "./name";
+import Name from "../name";
 
 const { className, styles} = css.resolve`
   h1 {

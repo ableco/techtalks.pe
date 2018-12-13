@@ -1,10 +1,10 @@
-import Section from "./ui/section";
-import Wrapper from "./ui/wrapper";
-import Subtext from "./ui/subtext";
-import { H2 } from "./ui/heading";
-import Person from "./person";
+import Section from "../ui/section";
+import Wrapper from "../ui/wrapper";
+import Subtext from "../ui/subtext";
+import { H2 } from "../ui/heading";
+import Person from "../person";
 
-import organizers from "../data/organizers.json";
+import organizers from "../../data/organizers.json";
 
 function Organizers() {
   return (

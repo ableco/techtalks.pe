@@ -1,7 +1,7 @@
-import Navigation from "./navigation";
-import Name from "./name";
-import Slogan from "./slogan";
-import Button from "./button";
+import Navigation from "../navigation";
+import Name from "../name";
+import Slogan from "../slogan";
+import Button from "../ui/button";
 
 function Hero() {
   return (

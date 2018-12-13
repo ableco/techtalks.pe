@@ -1,7 +1,7 @@
-import Section from "./ui/section";
-import Wrapper from "./ui/wrapper";
-import { H2, H3 } from "./ui/heading";
-import Button from "./button";
+import Section from "../ui/section";
+import Wrapper from "../ui/wrapper";
+import { H2, H3 } from "../ui/heading";
+import Button from "../ui/button";
 
 function Features() {
   return (

@@ -8,6 +8,8 @@ function Wrapper({ children, className, flex, center, vertical, ...props}) {
         section {
           max-width: 64em;
           margin: 0 auto;
+          padding: 0 1em;
+          box-sizing: border-box;
         }
         section.flex {
           display: flex;

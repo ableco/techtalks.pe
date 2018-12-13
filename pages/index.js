@@ -1,12 +1,13 @@
 import Head from "next/head";
 
-import Hero from "../components/hero";
-import Features from "../components/features";
-import Venue from "../components/venue";
-import Sponsors from "../components/sponsors";
-import Organizers from "../components/organizers";
-import PreviousTalks from "../components/previous-talks";
-import Footer from "../components/footer";
+import Hero from "../components/sections/hero";
+import Features from "../components/sections/features";
+import Venue from "../components/sections/venue";
+import Sponsors from "../components/sections/sponsors";
+import Organizers from "../components/sections/organizers";
+import PreviousTalks from "../components/sections/previous-talks";
+import NextEvent from "../components/sections/next-event";
+import Footer from "../components/sections/footer";
 
 function HomePage() {
   return (
@@ -18,10 +19,11 @@ function HomePage() {
       </Head>
 
       <Hero />
-      <Features />
+      <NextEvent />
       <Venue />
-      <Organizers />
+      <Features />
       <Sponsors />
+      <Organizers />
       <PreviousTalks />
       <Footer />
 

@@ -1,27 +1,32 @@
-import Section from "./ui/section";
-import venue from "../data/venue.json";
+import Section from "../ui/section";
+import Wrapper from "../ui/wrapper";
+import { H2 } from "../ui/heading";
+import venue from "../../data/venue.json";
 
 function Venue() {
   return (
     <Section id="venue">
-      <div className="wrapper">
-        <iframe
-          src={venue.map}
-          height="200"
-          frameBorder="0"
-          allowFullScreen
-        />
-        <div className="content">
-          <h2>Ubicación</h2>
-          <address>
-            {venue.address.place}
-            <br />
-            {venue.address.direction}
-            <br />
-            {venue.address.city}
-          </address>
+      <Wrapper center>
+        <H2>Venue</H2>
+        <div className="content-wrapper">
+          <iframe
+            src={venue.map}
+            height="200"
+            frameBorder="0"
+            allowFullScreen
+          />
+          <div className="content">
+            <h2>Ubicación</h2>
+            <address>
+              {venue.address.place}
+              <br />
+              {venue.address.direction}
+              <br />
+              {venue.address.city}
+            </address>
+          </div>
         </div>
-      </div>
+      </Wrapper>
       <style jsx>{`
         iframe {
           border: none;
@@ -40,13 +45,13 @@ function Venue() {
           font-size: 1.25em;
           margin-bottom: 2em;
         }
-        .wrapper {
+        .content-wrapper {
           max-width: 60em;
           margin: 0 auto;
           display: flex;
         }
         @media (max-width: 30em) {
-          .wrapper {
+          .content-wrapper {
             flex-direction: column;
           }
           iframe {

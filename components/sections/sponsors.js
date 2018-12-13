@@ -1,5 +1,5 @@
-import Section from "./ui/section";
-import Wrapper from "./ui/wrapper";
+import Section from "../ui/section";
+import Wrapper from "../ui/wrapper";
 
 function Sponsors() {
   return (
