@@ -117,13 +117,13 @@ function Navigation({ router }) {
         .nav {
           display: flex;
           justify-content: space-between;
-          width: 60em;
+          width: 64em;
           max-width: 100%;
           margin: 0 auto;
           box-sizing: border-box;
         }
 
-        @media (max-width: 60em) {
+        @media (max-width: 64em) {
           .nav {
             padding: 0 1em;
           }

@@ -51,9 +51,7 @@ function Slogan() {
     <h2 ref={ref}>
       {running ? (
         <>
-          <span>Tu Meetup</span>
-          <br />
-          <strong>{words[count]}</strong>
+          <span>Tu Meetup</span> <strong>{words[count]}</strong>
         </>
       ) : (
         <span className="finished">Tu Meetup</span>
@@ -61,12 +59,12 @@ function Slogan() {
       <style jsx>{`
         h2 {
           font-size: 1.75em;
-          margin: 0 0 5rem;
-          font-weight: 600;
+          margin: 0 0 2.5rem;
+          font-weight: 400;
           height: 83px;
         }
         h2 strong {
-          font-size: 1.5em;
+          font-size: 1em;
           font-weight: 700;
         }
         .finished {
@@ -80,7 +78,7 @@ function Slogan() {
         }
         @media (min-width: 64em) {
           h2 {
-            margin-bottom: 7.5rem;
+            margin-bottom: 1.5rem;
           }
         }
         @keyframes slideDown {
