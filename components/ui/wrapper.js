@@ -22,6 +22,11 @@ function Wrapper({ children, className, flex, center, vertical, ...props}) {
         section.vertical {
           flex-direction: column;
         }
+        @media (min-width: 64em) {
+          section {
+            padding: 0;
+          }
+        }
       `}</style>
     </section>
   )

@@ -61,7 +61,7 @@ function Slogan() {
       <style jsx>{`
         h2 {
           font-size: 1.75em;
-          margin: 0;
+          margin: 0 0 5rem;
           font-weight: 600;
           height: 83px;
         }
@@ -77,6 +77,11 @@ function Slogan() {
           animation-iteration-count: 1;
           animation-fill-mode: forwards;
           will-change: font-size, font-weight;
+        }
+        @media (min-width: 64em) {
+          h2 {
+            margin-bottom: 7.5rem;
+          }
         }
         @keyframes slideDown {
           from {

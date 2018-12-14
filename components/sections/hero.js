@@ -5,41 +5,45 @@ import Button from "../ui/button";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <Navigation />
-      <Name />
-      <Slogan />
-      <div className="button-container">
-        <Button href="https://goo.gl/forms/0XRxomZaK9gK13F03" invert>
-          DAR UNA CHARLA
-        </Button>
-      </div>
+      <header>
+        <Name />
+        <Slogan />
+        <div className="button-container">
+          <Button
+            href="https://goo.gl/forms/0XRxomZaK9gK13F03"
+            invert
+          >
+            Dar una charla
+          </Button>
+        </div>
+      </header>
       <style jsx>{`
         .hero {
           background-color: white;
-          background-image: radial-gradient(circle, #D7D7D7, #D7D7D7 1px, #FFF 1px, #FFF);
+          background-image: radial-gradient(
+            circle,
+            #d7d7d7,
+            #d7d7d7 1px,
+            #fff 1px,
+            #fff
+          );
           background-size: 28px 28px;
-          box-sizing: border-box;
-          height: 50vh;
-          min-height: 400px;
-          text-align: center;
+        }
+        header {
           display: flex;
-          justify-content: center;
-          align-content: center;
           flex-direction: column;
-          width: 100%;
-          position: relative;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
         }
         .button-container {
-          position: absolute;
-          bottom: 5vh;
-          left: 0;
-          right: 0;
-          text-align: center;
+          margin-bottom: 2.5rem;
         }
-        @media (max-width: 60em) {
+        @media (min-width: 64em) {
           .button-container {
-            bottom: 5vh;
+            margin-bottom: 5rem;
           }
         }
       `}</style>

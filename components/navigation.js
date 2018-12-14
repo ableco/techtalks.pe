@@ -120,10 +120,6 @@ function Navigation({ router }) {
           width: 60em;
           max-width: 100%;
           margin: 0 auto;
-          position: absolute;
-          top: 1em;
-          left: 0;
-          right: 0;
           box-sizing: border-box;
         }
 
