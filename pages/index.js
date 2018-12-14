@@ -13,9 +13,16 @@ function HomePage() {
   return (
     <main>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Tech Talks - Tu Meetup</title>
-        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Tech Talks es una comunidad de tecnología libre y abierta, realizamos eventos mensuales para aprender de cualquier tema de tecnología." />
+        <meta name="language" content="es" />
+        <meta name="pagename" content="Tech Talks" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#000000" />
       </Head>
 
       <Hero />
