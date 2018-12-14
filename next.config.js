@@ -1,4 +1,6 @@
-module.exports = {
+const withOffline = require('next-offline')
+
+const config = {
   webpack: function(config) {
     const originalEntry = config.entry;
     config.entry = async () => {
@@ -17,3 +19,5 @@ module.exports = {
     return config;
   }
 };
+
+module.exports = withOffline(config)
