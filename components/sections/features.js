@@ -45,6 +45,7 @@ function Features() {
           flex: 1;
           margin: 0 2em;
           text-align: justify;
+          hyphens: auto;
         }
         .column:first-of-type {
           margin-left: 0;
