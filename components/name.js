@@ -5,11 +5,12 @@ function Name({ children, ...props }) {
       <style jsx>{`
         h1 {
           font-weight: 700;
-          font-size: 5em;
+          font-size: 3em;
           margin: 2.5rem 0 1rem;
         }
         @media (min-width: 64em) {
           h1 {
+            font-size: 5em;
             margin: 5rem 0 2.5rem;
           }
         }
