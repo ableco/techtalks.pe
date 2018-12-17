@@ -1,0 +1,15 @@
+{
+  "dir": "ltr",
+  "lang": "es",
+  "name": "Tech Talks",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "https://techtalks.pe/",
+  "short_name": "Tech Talks",
+  "theme_color": "#000000",
+  "description": "Tech Talks es una comunidad de tecnología libre y abierta, realizamos eventos mensuales para aprender de cualquier tema de tecnología.",
+  "orientation": "any",
+  "background_color": "#000000",
+  "related_applications": [],
+  "prefer_related_applications": false
+}

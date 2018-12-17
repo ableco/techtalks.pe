@@ -25,6 +25,7 @@ function HomePage() {
         <meta name="theme-color" content="#000000" />
         <meta name="apple-mobile-web-app-title" content="Tech Talks" />
         <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
+        <link rel="manifest" href="/static/manifest.json" />
       </Head>
 
       <Hero />
