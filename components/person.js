@@ -2,7 +2,7 @@ function Person({ name, github, twitter, avatar, title }) {
   return (
     <div className="wrapper">
       <figure className="avatar">
-        <img src={avatar} width="75" height="75" />
+        <img src={avatar} width="75" height="75" alt={`Avatar de ${name}`} />
       </figure>
       <div className="content">
         <h3>{name}</h3>
