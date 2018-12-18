@@ -11,8 +11,8 @@ const words = ["de Desarrollo"].concat(
 
 // it should be a number max 2s and min 600ms or calculated to be completed in 2m 30s
 const duration =
-  60000 / words.length >= 2000
-    ? 2000
+  60000 / words.length >= 1200
+    ? 1200
     : 60000 / words.length < 600
     ? 600
     : 60000 / words.length;
