@@ -41,7 +41,7 @@ function Talk({ talk, isLast, isFirst }) {
 function LastEvent() {
   return (
     <div className="container">
-      <H2 style={{ textAlign: "right" }}>Próximo Evento</H2>
+      <H2>Próximo Evento</H2>
       <p>
         Este{" "}
         <strong>
@@ -66,14 +66,11 @@ function LastEvent() {
         p {
           font-size: 16px;
           line-height: 1.5;
-          text-align: right;
-        }
-        .button-container {
-          text-align: right;
         }
         @media (min-width: 64em) {
           .container {
             max-width: 40%;
+          text-align: right;
           }
         }
       `}</style>
