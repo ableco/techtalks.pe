@@ -4,7 +4,7 @@ import { H2 } from "../ui/heading";
 
 function Venue() {
   return (
-    <Section id="venue" inverted>
+    <Section id="venue">
       <Wrapper center>
         <H2>Ubicación</H2>
         <iframe
