@@ -17,7 +17,7 @@ function Venue() {
       <style jsx>{`
         iframe {
           border: none;
-          width: 70%;
+          width: 100%;
         }
         @media (max-width: 30em) {
           iframe {
