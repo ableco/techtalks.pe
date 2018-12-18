@@ -5,7 +5,7 @@ import shuffle from "../lib/shuffle";
 import slogans from "../data/slogans.json";
 
 const words = ["de Desarrollo"].concat(
-  shuffle(new Set(slogans)),
+  shuffle(new Set(slogans)).slice(0, 13),
   "de Tecnología"
 );
 
