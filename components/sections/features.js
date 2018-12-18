@@ -65,7 +65,6 @@ function Features() {
             text-align: left;
           }
           header {
-            padding: 0 1em;
             text-align: left;
           }
         }
