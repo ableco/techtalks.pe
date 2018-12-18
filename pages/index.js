@@ -28,8 +28,8 @@ function HomePage() {
       </Head>
 
       <Hero />
-      <Venue />
       <Features />
+      <Venue />
       <Sponsors />
       <Organizers />
       <PreviousTalks />
