@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Head from "next/head";
 import useDocumentVisibility from "@rehooks/document-visibility";
 import useOnScreen from "../lib/use-on-screen";
 import shuffle from "../lib/shuffle";
@@ -52,6 +53,9 @@ function Slogan() {
       {running ? (
         <>
           <span>Tu Meetup</span> <strong>{words[count]}</strong>
+          <Head>
+            <title>Tech Talks - Tu Meetup {words[count]}</title>
+          </Head>
         </>
       ) : (
         <span className="finished">Tu Meetup</span>
