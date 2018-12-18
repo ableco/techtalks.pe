@@ -11,6 +11,76 @@ import events from "../../data/events.json";
 
 const lastEvent = events[0];
 
+function Talk({ talk, isLast, isFirst }) {
+  return (
+    <>
+      {!isFirst
+        ? isLast
+          ? talk.title[0].toLowerCase() === "i"
+            ? " e "
+            : " y "
+          : ", "
+        : null}
+      <strong>{talk.title}</strong> con{" "}
+      <a href={talk.url} target="_blank" rel="nofollow noopener">
+        {talk.name}
+      </a>
+      <style jsx>{`
+        a {
+          color: black;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      `}</style>
+    </>
+  );
+}
+
+function LastEvent() {
+  return (
+    <div className="container">
+      <H2 style={{ textAlign: "right" }}>Próximo Evento</H2>
+      <p>
+        Este{" "}
+        <strong>
+          {format(lastEvent.date, "dddd DD [de] MMMM", { locale })}
+        </strong>{" "}
+        vamos a hablar de{" "}
+        {lastEvent.talks.map((talk, index) => (
+          <Talk
+            talk={talk}
+            isFirst={index === 0}
+            isLast={index === lastEvent.talks.length - 1}
+          />
+        ))}
+      </p>
+      <div className="button-container">
+        <Button href="/assist">Asistir</Button>
+      </div>
+      <style jsx>{`
+        .container {
+          flex: 1;
+        }
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          text-align: right;
+        }
+        .button-container {
+          text-align: right;
+        }
+        @media (min-width: 64em) {
+          .container {
+            max-width: 40%;
+          }
+        }
+      `}</style>
+    </div>
+  );
+}
+
 function Hero() {
   return (
     <section id="hero" className="hero">
@@ -26,12 +96,7 @@ function Hero() {
               </Button>
             </div>
           </div>
-          {lastEvent.date !== "tbd" && (
-            <div>
-              <H2>Próximo Evento</H2>
-              <strong>{format(lastEvent.date, "[El] dddd DD [de] MMMM", { locale })}</strong>
-            </div>
-          )}
+          {lastEvent.date !== "tbd" && <LastEvent />}
         </header>
       </Wrapper>
       <style jsx>{`
