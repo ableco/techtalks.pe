@@ -8,7 +8,7 @@ import organizers from "../../data/organizers.json";
 
 function Organizers() {
   return (
-    <Section id="sponsors" inverted>
+    <Section id="organizers" inverted>
       <Wrapper center>
         <H2>Organizadores</H2>
         <Subtext>Las siguiente personas hacen posible Tech Talks</Subtext>
