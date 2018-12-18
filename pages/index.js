@@ -6,7 +6,6 @@ import Venue from "../components/sections/venue";
 import Sponsors from "../components/sections/sponsors";
 import Organizers from "../components/sections/organizers";
 import PreviousTalks from "../components/sections/previous-talks";
-import NextEvent from "../components/sections/next-event";
 import Footer from "../components/sections/footer";
 
 function HomePage() {
@@ -29,7 +28,6 @@ function HomePage() {
       </Head>
 
       <Hero />
-      <NextEvent />
       <Venue />
       <Features />
       <Sponsors />
