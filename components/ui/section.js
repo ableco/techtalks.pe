@@ -6,9 +6,8 @@ function Section({ children, inverted, className, ...props }) {
       {children}
       <style jsx>{`
         section {
-          padding: 5em 0;
+          padding: 5rem 0;
           background-size: 28px 28px;
-          min-height: 50vh;
           box-sizing: border-box;
         }
         section:not(.inverted) {
