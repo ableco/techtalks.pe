@@ -59,7 +59,6 @@ function Features() {
         @media (max-width: 64em) {
           .row {
             flex-direction: column;
-            padding: 1em;
           }
           .column {
             margin: 0;
