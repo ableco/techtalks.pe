@@ -1,6 +1,6 @@
 import Link from "next/link";
 import cn from "classnames";
-import { parse } from "url";
+import parse from "parse-path";
 
 export function LinkButton({
   children,
@@ -52,7 +52,7 @@ export function LinkButton({
     </a>
   );
 
-  if (parse(href).hostname === null) {
+  if (parse(href).resource !== "") {
     return (
       <Link href={href} as={as}>
         {a}

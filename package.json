@@ -21,6 +21,7 @@
     "next": "^7.0.2",
     "next-nprogress": "^1.4.0",
     "next-offline": "^3.3.1",
+    "parse-path": "^4.0.0",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
     "react-spring": "^6.1.10"
