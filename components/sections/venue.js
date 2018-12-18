@@ -12,6 +12,7 @@ function Venue() {
           height="300"
           frameBorder="0"
           allowFullScreen
+          title="Able, Oficina 902, Jorge Chávez 184, Miraflores 15074, Lima, Perú"
         />
       </Wrapper>
       <style jsx>{`
