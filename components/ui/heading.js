@@ -6,6 +6,8 @@ export function H2({ children, ...props }) {
         h2 {
           font-size: 2em;
           font-weight: 600;
+          margin-top: 0;
+          margin-bottom: 3rem;
         }
       `}</style>
     </h2>
