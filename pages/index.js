@@ -33,7 +33,6 @@ function HomePage() {
       <Organizers />
       <Sponsors />
       <PreviousTalks />
-      <Footer />
 
       <style jsx global>{`
         body {
