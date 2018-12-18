@@ -45,7 +45,7 @@ function LastEvent() {
       <p>
         Este{" "}
         <strong>
-          {format(lastEvent.date, "dddd DD [de] MMMM", { locale })}
+          {format(lastEvent.date, "dddd DD [de] MMMM [a las] h a", { locale })}
         </strong>{" "}
         vamos a hablar de{" "}
         {lastEvent.talks.map((talk, index) => (
