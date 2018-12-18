@@ -14,8 +14,8 @@ function Features() {
           <div className="column">
             <H3>Comunidad de Tecnología</H3>
             <p>
-              Como a tí, nos encanta la tecnología y hablar de ella, puedes
-              formar parte de nuestra comunidad en Spectrum donde puedes
+              Como a tí, nos encanta la tecnología y hablar de ella, <strong>puedes
+              formar parte de nuestra comunidad en Spectrum</strong> donde puedes
               encontrarnos todos los días para seguir hablando.
             </p>
             <Button href="https://spectrum.chat/tech-talks-pe/">
@@ -27,7 +27,7 @@ function Features() {
             <p>
               Somos una comunidad con ganas de aprender siempre abierta a nuevas
               propuesta de charlas. Si hay algo en lo que eres experto o estás
-              aprendiendo, la mejor forma de aprender es enseñar.
+              aprendiendo, <strong>la mejor forma de aprender es enseñar</strong>.
             </p>
             <Button href="https://goo.gl/forms/0XRxomZaK9gK13F03">
               Propón una charla
