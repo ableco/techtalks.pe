@@ -57,7 +57,7 @@ function LastEvent() {
         ))}
       </p>
       <div className="button-container">
-        <Button href="/assist">Asistir</Button>
+        <Button href={lastEvent.url}>Asistir</Button>
       </div>
       <style jsx>{`
         .container {
