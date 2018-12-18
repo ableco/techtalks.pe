@@ -30,8 +30,8 @@ function HomePage() {
       <Hero />
       <Features />
       <Venue />
-      <Sponsors />
       <Organizers />
+      <Sponsors />
       <PreviousTalks />
       <Footer />
 
