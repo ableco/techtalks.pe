@@ -18,7 +18,7 @@ export function LinkButton({
           display: inline-block;
           font-size: 1em;
           cursor: pointer;
-          text-decoration: none;
+          text-decoration: underline;
           padding: 0.5rem 0.5rem;
           margin: -0.25rem -0.5rem;
           border-radius: 7px;
@@ -40,6 +40,7 @@ export function LinkButton({
           box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.39);
           color: white;
           font-weight: 600;
+          text-decoration: none;
         }
         .button.invert:hover {
           background: rgba(11, 11, 11, 0.9);
