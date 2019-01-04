@@ -3,14 +3,18 @@
     "name": "Sergio Xalambrí",
     "avatar": "/static/avatars/sergiodxa.jpg",
     "twitter": "sergiodxa",
-    "github": "sergiodxa",
-    "title": "Main Organizer"
+    "github": "sergiodxa"
   },
   {
     "name": "Kattya Cuevas",
     "avatar": "/static/avatars/kattyacuevas.jpg",
     "twitter": "KattyaCuevas",
-    "github": "kattyacuevas",
-    "title": "Organizer"
+    "github": "kattyacuevas"
+  },
+  {
+    "name": "Karen Da Cruz",
+    "avatar": "/static/avatars/karen_dax.jpg",
+    "twitter": "karen_dax",
+    "github": "kandra"
   }
 ]
