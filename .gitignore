@@ -3,3 +3,5 @@ node_modules
 out
 lambda
 .DS_Store
+*.log
+logs
