@@ -50,6 +50,7 @@ function LastEvent() {
         vamos a hablar de{" "}
         {lastEvent.talks.map((talk, index) => (
           <Talk
+            key={talk.title + talk.name}
             talk={talk}
             isFirst={index === 0}
             isLast={index === lastEvent.talks.length - 1}
