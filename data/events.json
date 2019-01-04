@@ -1,18 +1,12 @@
 [
-  { "date": "tbd" },
   {
-    "date": "2019-01-08T19:00:00",
-    "url": "https://meetup.com/TechTalksPe",
+    "date": "2019-01-15T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/257781616/",
     "talks": [
       {
-        "name": "Sergio Xalambrí",
-        "title": "Introducción a React Hooks",
-        "url": "https://sergiodxa.com"
-      },
-      {
-        "name": "Kattya Cuevas",
-        "title": "Introducción a Ruby",
-        "url": "https://twitter.com/KattyaCuevas"
+        "name": "Hansy Schmitt",
+        "title": "Flutter",
+        "url": "https://twitter.com/hacksy_"
       }
     ]
   }
