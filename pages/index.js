@@ -1,12 +1,13 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
 import Hero from "../components/sections/hero";
 import Features from "../components/sections/features";
-import Venue from "../components/sections/venue";
 import Sponsors from "../components/sections/sponsors";
 import Organizers from "../components/sections/organizers";
 import PreviousTalks from "../components/sections/previous-talks";
-import Footer from "../components/sections/footer";
+
+const Venue = dynamic(() => import("../components/sections/venue"));
 
 function HomePage() {
   return (
