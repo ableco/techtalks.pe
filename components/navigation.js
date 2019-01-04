@@ -22,11 +22,11 @@ const mainLinks = [
 ];
 
 const extraLinks = [
-  {
-    content: "Blog",
-    href: "/blog",
-    title: "Lee sobre nuestros últimos eventos"
-  },
+  // {
+  //   content: "Blog",
+  //   href: "/blog",
+  //   title: "Lee sobre nuestros últimos eventos"
+  // },
   {
     content: <IconSpectrum />,
     href: "https://spectrum.chat/tech-talks-pe/",
