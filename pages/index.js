@@ -1,9 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-import useAmbientLight from "../lib/use-ambient-light";
-import usePermissions from "../lib/use-permissions";
-
 import Hero from "../components/sections/hero";
 import Features from "../components/sections/features";
 import Sponsors from "../components/sections/sponsors";
@@ -13,9 +10,6 @@ import PreviousTalks from "../components/sections/previous-talks";
 const Venue = dynamic(() => import("../components/sections/venue"));
 
 function HomePage() {
-  const hasPermission = usePermissions("ambient-light-sensor");
-  const illuminance = useAmbientLight(hasPermission);
-  console.log('illuminance', illuminance);
   return (
     <main>
       <Head>
@@ -40,8 +34,6 @@ function HomePage() {
       <Organizers />
       <Sponsors />
       <PreviousTalks />
-
-      {illuminance}
 
       <style jsx global>{`
         body {
