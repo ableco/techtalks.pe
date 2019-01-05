@@ -18,7 +18,7 @@ const duration =
     ? 600
     : 60000 / words.length;
 
-function Slogan() {
+function Slogan({ animate = true } = {}) {
   const [count, setCount] = useState(0);
   const [running, setRunning] = useState(true);
   const documentVisibility = useDocumentVisibility();
@@ -27,7 +27,7 @@ function Slogan() {
 
   useEffect(
     () => {
-      if (documentVisibility === "hidden" || !isOnScreen) return;
+      if (documentVisibility === "hidden" || !isOnScreen || !animate) return;
       let timer;
       if (running) {
         timer = setTimeout(
@@ -45,12 +45,12 @@ function Slogan() {
       }
       return () => clearTimeout(timer);
     },
-    [count, running, documentVisibility, isOnScreen]
+    [count, running, documentVisibility, isOnScreen, animate]
   );
 
   return (
     <h2 ref={ref}>
-      {running ? (
+      {running && animate ? (
         <>
           <span>Tu Meetup</span> <strong>{words[count]}</strong>
           <Head>
