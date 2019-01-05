@@ -7,6 +7,7 @@ function Name({ children, ...props }) {
           font-weight: 700;
           font-size: 3em;
           margin: 2.5rem 0 1rem;
+          letter-spacing: -.05em;
         }
         @media (min-width: 64em) {
           h1 {
