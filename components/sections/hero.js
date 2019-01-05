@@ -63,15 +63,17 @@ function LastEvent() {
       <style jsx>{`
         .container {
           flex: 1;
+          margin-bottom: 2rem;
         }
         p {
           font-size: 16px;
           line-height: 1.5;
         }
-        @media (min-width: 64em) {
+        @media (min-width: 64rem) {
           .container {
             max-width: 40%;
-          text-align: right;
+            text-align: right;
+            margin-bottom: 0;
           }
         }
       `}</style>
