@@ -41,6 +41,8 @@ function HomePage() {
       <Sponsors />
       <PreviousTalks />
 
+      {illuminance}
+
       <style jsx global>{`
         body {
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
