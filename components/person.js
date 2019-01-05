@@ -8,8 +8,22 @@ function Person({ name, github, twitter, avatar, title }) {
         <h3>{name}</h3>
         {title && <p>{title}</p>}
         <div className="links">
-          {github && <a href={`https://github.com/${github}`}>GitHub</a>}
-          {twitter && <a href={`https://twitter.com/${twitter}`}>Twitter</a>}
+          {github && (
+            <a
+              href={`https://github.com/${github}`}
+              title={`GitHub de ${name}`}
+            >
+              GitHub
+            </a>
+          )}
+          {twitter && (
+            <a
+              href={`https://twitter.com/${twitter}`}
+              title={`Twitter de ${name}`}
+            >
+              Twitter
+            </a>
+          )}
         </div>
       </div>
       <style jsx>{`
