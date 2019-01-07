@@ -60,6 +60,7 @@ function Person({ name, github, twitter, avatar, title }) {
           border-radius: 50%;
           border: 2px solid white;
           box-sizing: border-box;
+          box-shadow: 0 0 0.5em #ccc;
         }
         a {
           color: #666;
