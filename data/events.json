@@ -5,12 +5,12 @@
     "talks": [
       {
         "name": "Hansy Schmitt",
-        "title": "Flutter",
+        "title": "programar en vivo una aplicación de Flutter desde cero",
         "url": "https://twitter.com/hacksy_"
       },
       {
         "name": "Kattya Cuevas",
-        "title": "Introducción a React.js",
+        "title": "ver una introducción a React.js",
         "url": "https://twitter.com/KattyaCuevas"
       }
     ]

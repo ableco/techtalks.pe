@@ -47,7 +47,7 @@ function LastEvent() {
         <strong>
           {format(lastEvent.date, "dddd DD [de] MMMM [a las] h a", { locale })}
         </strong>{" "}
-        vamos a hablar de{" "}
+        vamos a{" "}
         {lastEvent.talks.map((talk, index) => (
           <Talk
             key={talk.title + talk.name}
