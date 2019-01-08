@@ -7,18 +7,19 @@ export function LinkButton({
   href,
   as = href,
   invert,
+  big,
   className,
   ...props
 }) {
   const a = (
-    <a href={href} className={cn(className, "button", { invert })} {...props}>
+    <a href={href} className={cn(className, "button", { invert, big })} {...props}>
       {children}
       <style jsx>{`
-        .button {
+      .button {
           display: inline-block;
           font-size: 1em;
           cursor: pointer;
-          text-decoration: underline;
+          text-decoration: none;
           padding: 0.5rem 0.5rem;
           margin: -0.25rem -0.5rem;
           border-radius: 7px;
@@ -40,14 +41,21 @@ export function LinkButton({
           box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.39);
           color: white;
           font-weight: 600;
-          text-decoration: none;
         }
         .button.invert:hover {
           background: rgba(11, 11, 11, 0.9);
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.23);
         }
         .button.invert:active {
-          background: #006ae6;
+          background: rgba(11, 11, 11, 0.9);;
+        }
+        .button.big {
+          padding: 0.75rem 0.75rem;
+          margin: -0.5rem -0.75rem;
+        }
+        .button.invert.big {
+          height: 3rem;
+          padding: 0 2.5rem;
         }
       `}</style>
     </a>
@@ -105,7 +113,7 @@ export function ActionButton({ children, invert, big, className, ...props }) {
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.23);
         }
         .button.invert:active {
-          background: #006ae6;
+          background: rgba(11, 11, 11, 0.9);;
         }
         .button.big {
           padding: 0.75rem 0.75rem;
