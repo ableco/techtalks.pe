@@ -6,8 +6,7 @@ import Wrapper from "../../components/ui/wrapper";
 import Subtext from "../../components/ui/subtext";
 import Button from "../../components/ui/button";
 
-function CFPThanks(props) {
-  console.log(props);
+function CFPThanks() {
   return (
     <main>
       <Head>
