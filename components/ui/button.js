@@ -64,11 +64,11 @@ export function LinkButton({
   return a;
 }
 
-export function ActionButton({ children, invert, className, ...props }) {
+export function ActionButton({ children, invert, big, className, ...props }) {
   return (
     <button
       type="button"
-      className={cn(className, "button", { invert })}
+      className={cn(className, "button", { invert, big })}
       {...props}
     >
       {children}
@@ -106,6 +106,14 @@ export function ActionButton({ children, invert, className, ...props }) {
         }
         .button.invert:active {
           background: #006ae6;
+        }
+        .button.big {
+          padding: 0.75rem 0.75rem;
+          margin: -0.5rem -0.75rem;
+        }
+        .button.invert.big {
+          height: 3rem;
+          padding: 0 2.5rem;
         }
       `}</style>
     </button>
