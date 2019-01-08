@@ -17,12 +17,6 @@ function CallForPapersPage() {
   const [topic, setTopic, clearTopic] = useLocalState("cfp-topic", "");
   const [months, setMonths, clearMonths] = useLocalState("cfp-months", []);
 
-  function handleSubmit() {
-    clearEmail();
-    clearTopic();
-    clearMonths();
-  }
-
   return (
     <main>
       <Head>
@@ -54,11 +48,10 @@ function CallForPapersPage() {
           </Subtext>
           <form
             name="cfp"
-            method="GET"
+            method="post"
             action="/cfp/gracias/"
             data-netlify="true"
             data-netlify-honeypot="true"
-            onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="cfp" />
             <fieldset>
