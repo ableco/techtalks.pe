@@ -52,7 +52,13 @@ function CallForPapersPage() {
             ¡Si hay algo en lo que eres experto, o estás aprendiendo, o de lo
             que te gustaría contarnos, eres más que bienvenido a dar una charla!
           </Subtext>
-          <form name="cfp" method="GET" action="/cfp/gracias/" data-netlify="true" onSubmit={handleSubmit}>
+          <form
+            name="cfp"
+            method="GET"
+            action="/cfp/gracias/"
+            data-netlify="true"
+            onSubmit={handleSubmit}
+          >
             <fieldset>
               <legend>¿A qué email podríamos contactarte?</legend>
               <label htmlFor="email">
