@@ -1,12 +1,22 @@
 import Head from "next/head";
+import { useEffect } from "react";
 
 import Navigation from "../../components/navigation";
 import Section from "../../components/ui/section";
 import Wrapper from "../../components/ui/wrapper";
 import Subtext from "../../components/ui/subtext";
 import Button from "../../components/ui/button";
+import useLocalState from "../../lib/use-local-state";
 
 function CFPThanks() {
+  const [, , clearTopic] = useLocalState("cfp-topic", "");
+  const [, , clearMonths] = useLocalState("cfp-months", []);
+
+  useEffect(() => {
+    clearTopic();
+    clearMonths();
+  });
+
   return (
     <main>
       <Head>
@@ -33,9 +43,13 @@ function CFPThanks() {
         <Wrapper>
           <h1>¡Muchas gracias por enviar tu propuesta de charla!</h1>
           <Subtext>
-            Vamos a contactarnos contigo a la dirección de correo que escribiste para coordinar la fecha de tu charla y ayudarte a prepararte en caso de necesitarlo.
+            Vamos a contactarnos contigo a la dirección de correo que escribiste
+            para coordinar la fecha de tu charla y ayudarte a prepararte en caso
+            de necesitarlo.
           </Subtext>
-          <Button href="/cfp" invert>Proponer otra charla</Button>
+          <Button href="/cfp" invert>
+            Proponer otra charla
+          </Button>
         </Wrapper>
       </Section>
 
