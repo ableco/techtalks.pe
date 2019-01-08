@@ -1,9 +1,15 @@
+import Head from "next/head";
+
 import Name from "../components/name";
 import Slogan from "../components/slogan";
 
 function OpenGraphPage() {
   return (
     <main>
+      <Head>
+        <title>Open Graph Template</title>
+        <meta name="robots" content="none" />
+      </Head>
       <Name />
       <Slogan animate={false} />
 
