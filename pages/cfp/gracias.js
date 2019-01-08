@@ -34,7 +34,7 @@ function CFPThanks(props) {
         <Wrapper>
           <h1>¡Muchas gracias por enviar tu propuesta de charla!</h1>
           <Subtext>
-            Vamos a contactarnos contigo a [email] para coordinar la fecha de tu charla y ayudarte a prepararte en caso de necesitarlo.
+            Vamos a contactarnos contigo a la dirección de correo que escribiste para coordinar la fecha de tu charla y ayudarte a prepararte en caso de necesitarlo.
           </Subtext>
           <Button href="/cfp" invert>Proponer otra charla</Button>
         </Wrapper>
