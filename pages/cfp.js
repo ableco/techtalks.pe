@@ -57,8 +57,10 @@ function CallForPapersPage() {
             method="GET"
             action="/cfp/gracias/"
             data-netlify="true"
+            data-netlify-honeypot="true"
             onSubmit={handleSubmit}
           >
+            <input type="hidden" name="form-name" value="cfp" />
             <fieldset>
               <legend>¿A qué email podríamos contactarte?</legend>
               <label htmlFor="email">
