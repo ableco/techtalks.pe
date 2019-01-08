@@ -13,9 +13,15 @@ import useLocalState from "../lib/use-local-state";
 const ONE_MONTH = 2592000000;
 
 function CallForPapersPage() {
-  const [email, setEmail] = useLocalState("cfp-email", "");
-  const [topic, setTopic] = useLocalState("cfp-topic", "");
-  const [months, setMonths] = useLocalState("cfp-months", []);
+  const [email, setEmail, clearEmail] = useLocalState("cfp-email", "");
+  const [topic, setTopic, clearTopic] = useLocalState("cfp-topic", "");
+  const [months, setMonths, clearMonths] = useLocalState("cfp-months", []);
+
+  function handleSubmit() {
+    clearEmail();
+    clearTopic();
+    clearMonths();
+  }
 
   return (
     <main>
@@ -31,7 +37,7 @@ function CallForPapersPage() {
         <meta name="pagename" content="Tech Talks" />
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="all" />
         <meta name="theme-color" content="#000000" />
         <meta name="apple-mobile-web-app-title" content="Tech Talks" />
         <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
@@ -46,7 +52,7 @@ function CallForPapersPage() {
             ¡Si hay algo en lo que eres experto, o estás aprendiendo, o de lo
             que te gustaría contarnos, eres más que bienvenido a dar una charla!
           </Subtext>
-          <form name="cfp" method="POST" data-netlify="true">
+          <form name="cfp" action="/cfp/gracias" data-netlify="true" onSubmit={handleSubmit}>
             <fieldset>
               <legend>¿A qué email podríamos contactarte?</legend>
               <label htmlFor="email">
@@ -90,20 +96,30 @@ function CallForPapersPage() {
               <legend>¿En qué meses podrías dar la charla?</legend>
 
               <label htmlFor="months">
-                <Subtext className="form-desc">Cuentanos en que meses podrías venir a dar tu charla, ten en cuenta normalmente los eventos se realizan el segundo martes de cada mes.</Subtext>
+                <Subtext className="form-desc">
+                  Cuentanos en que meses podrías venir a dar tu charla, ten en
+                  cuenta normalmente los eventos se realizan el segundo martes
+                  de cada mes.
+                </Subtext>
                 <input
                   id="months"
                   name="months"
                   type="text"
                   value={months}
-                  placeholder={format(new Date().getTime() + ONE_MONTH, "MMMM", { locale })}
+                  placeholder={format(
+                    new Date().getTime() + ONE_MONTH,
+                    "MMMM",
+                    { locale }
+                  )}
                   onChange={event => setMonths(event.target.value)}
                   required
                 />
               </label>
             </fieldset>
             <div className="button-container">
-              <Button type="submit" invert big>Proponer charla</Button>
+              <Button type="submit" invert big>
+                Proponer charla
+              </Button>
             </div>
           </form>
         </Wrapper>
@@ -150,11 +166,11 @@ function CallForPapersPage() {
 
         input {
           border: 2px solid black;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
           box-sizing: border-box;
           color: gray;
           font-size: 1.25rem;
-          padding: .75em 1.5em;
+          padding: 0.75em 1.5em;
           transition: 100ms color ease-in-out;
           width: 100%;
         }
@@ -164,17 +180,9 @@ function CallForPapersPage() {
           outline: none;
         }
 
-        .button-container {
-          text-align: center;
-        }
-
         @media (min-width: 64em) {
           input {
             width: 75%;
-          }
-
-          .button-container {
-            text-align: right;
           }
         }
       `}</style>
