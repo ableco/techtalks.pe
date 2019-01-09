@@ -64,7 +64,7 @@ function CallForPapersPage() {
               <input
                 id="name"
                 name="name"
-                type="name"
+                type="text"
                 value={name}
                 placeholder="Jane Doe"
                 onChange={event => setName(event.target.value)}
