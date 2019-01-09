@@ -62,6 +62,7 @@ function CallForPapersPage() {
               </label>
               <Subtext className="form-desc" />
               <input
+                autoFocus
                 id="name"
                 name="name"
                 type="text"
