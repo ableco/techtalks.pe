@@ -178,6 +178,10 @@ function CallForPapersPage() {
           outline: none;
         }
 
+        .button-container {
+          padding-left: 0.75rem;
+        }
+
         @media (min-width: 64em) {
           input {
             width: 75%;
