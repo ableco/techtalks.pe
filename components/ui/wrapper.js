@@ -6,9 +6,9 @@ function Wrapper({ children, className, flex, center, vertical, ...props}) {
       {children}
       <style jsx>{`
         section {
-          max-width: 64em;
+          max-width: 64rem;
           margin: 0 auto;
-          padding: 0 1em;
+          padding: 0 1rem;
           box-sizing: border-box;
         }
         section.flex {
@@ -22,7 +22,7 @@ function Wrapper({ children, className, flex, center, vertical, ...props}) {
         section.vertical {
           flex-direction: column;
         }
-        @media (min-width: 64em) {
+        @media (min-width: 64rem) {
           section {
             padding: 0;
           }
