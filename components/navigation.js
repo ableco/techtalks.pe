@@ -16,7 +16,7 @@ const mainLinks = [
   {
     content: "Dar una charla",
     short: "CFP",
-    href: "https://goo.gl/forms/0XRxomZaK9gK13F03",
+    href: "/cfp",
     title: "¡Da una charla en uno de nuestros eventos!"
   }
 ];
@@ -108,13 +108,13 @@ function List({ data, current }) {
   );
 }
 
-function Navigation({ router }) {
+function Navigation({ router, ...props }) {
   return (
-    <nav className="nav">
+    <nav {...props}>
       <List data={mainLinks} current={router.route} />
       <List data={extraLinks} current={router.route} />
       <style jsx>{`
-        .nav {
+        nav {
           display: flex;
           justify-content: space-between;
           width: 64em;
@@ -124,7 +124,7 @@ function Navigation({ router }) {
         }
 
         @media (max-width: 64em) {
-          .nav {
+          nav {
             padding: 0 1em;
           }
         }
