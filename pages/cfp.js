@@ -13,9 +13,10 @@ import useLocalState from "../lib/use-local-state";
 const ONE_MONTH = 2592000000;
 
 function CallForPapersPage() {
-  const [email, setEmail, clearEmail] = useLocalState("cfp-email", "");
-  const [topic, setTopic, clearTopic] = useLocalState("cfp-topic", "");
-  const [months, setMonths, clearMonths] = useLocalState("cfp-months", []);
+  const [name, setName] = useLocalState("cfp-name", "");
+  const [email, setEmail] = useLocalState("cfp-email", "");
+  const [topic, setTopic] = useLocalState("cfp-topic", "");
+  const [months, setMonths] = useLocalState("cfp-months", []);
 
   return (
     <main>
@@ -54,6 +55,23 @@ function CallForPapersPage() {
             data-netlify-honeypot="true"
           >
             <input type="hidden" name="form-name" value="cfp" />
+
+            <fieldset>
+              <label htmlFor="name">
+                <legend>¿Cómo te llamas?</legend>
+              </label>
+              <Subtext className="form-desc" />
+              <input
+                id="name"
+                name="name"
+                type="name"
+                value={name}
+                placeholder="Jane Doe"
+                onChange={event => setName(event.target.value)}
+                required
+              />
+            </fieldset>
+
             <fieldset>
               <label htmlFor="email">
                 <legend>¿A qué email podríamos contactarte?</legend>
@@ -95,7 +113,7 @@ function CallForPapersPage() {
 
             <fieldset>
               <label htmlFor="months">
-                <legend>¿En qué meses podrías dar la charla?</legend>
+                <legend>¿Cuándo podrías dar la charla?</legend>
               </label>
               <Subtext className="form-desc">
                 Cuentanos en que meses podrías venir a dar tu charla, ten en
@@ -107,9 +125,13 @@ function CallForPapersPage() {
                 name="months"
                 type="text"
                 value={months}
-                placeholder={format(new Date().getTime() + ONE_MONTH, "MMMM", {
-                  locale
-                })}
+                placeholder={`Puedo dar la charla en ${format(
+                  new Date().getTime() + ONE_MONTH,
+                  "MMMM",
+                  {
+                    locale
+                  }
+                )}`}
                 onChange={event => setMonths(event.target.value)}
                 required
               />
