@@ -55,67 +55,64 @@ function CallForPapersPage() {
           >
             <input type="hidden" name="form-name" value="cfp" />
             <fieldset>
-              <legend>¿A qué email podríamos contactarte?</legend>
               <label htmlFor="email">
-                <Subtext className="form-desc">
-                  Nos vamos a contactar a este email para confirmar la fecha de
-                  la charla y, si lo necesitas, ayudarte a prepararla.
-                </Subtext>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={email}
-                  placeholder="tu@email.com"
-                  onChange={event => setEmail(event.target.value)}
-                  required
-                />
+                <legend>¿A qué email podríamos contactarte?</legend>
               </label>
+              <Subtext className="form-desc">
+                Nos vamos a contactar a este email para confirmar la fecha de la
+                charla y, si lo necesitas, ayudarte a prepararla.
+              </Subtext>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                value={email}
+                placeholder="tu@email.com"
+                onChange={event => setEmail(event.target.value)}
+                required
+              />
             </fieldset>
 
             <fieldset>
-              <legend>¿De qué tema te gustaría hablar?</legend>
               <label htmlFor="topic">
-                <Subtext className="form-desc">
-                  Cuéntanos más sobre que te gustaría hablar, no importa si ya
-                  tienes todo listo o es apenas una idea ¡Nosotros te ayudamos a
-                  prepararte!
-                </Subtext>
-                <input
-                  id="topic"
-                  name="topic"
-                  type="text"
-                  value={topic}
-                  placeholder="React.js, Unity, Rails, Android"
-                  onChange={event => setTopic(event.target.value)}
-                  required
-                />
+                <legend>¿De qué tema te gustaría hablar?</legend>
               </label>
+              <Subtext className="form-desc">
+                Cuéntanos más sobre que te gustaría hablar, no importa si ya
+                tienes todo listo o es apenas una idea ¡Nosotros te ayudamos a
+                prepararte!
+              </Subtext>
+              <input
+                id="topic"
+                name="topic"
+                type="text"
+                value={topic}
+                placeholder="React.js, Unity, Rails, Android"
+                onChange={event => setTopic(event.target.value)}
+                required
+              />
             </fieldset>
 
             <fieldset>
-              <legend>¿En qué meses podrías dar la charla?</legend>
-
               <label htmlFor="months">
-                <Subtext className="form-desc">
-                  Cuentanos en que meses podrías venir a dar tu charla, ten en
-                  cuenta normalmente los eventos se realizan el segundo martes
-                  de cada mes.
-                </Subtext>
-                <input
-                  id="months"
-                  name="months"
-                  type="text"
-                  value={months}
-                  placeholder={format(
-                    new Date().getTime() + ONE_MONTH,
-                    "MMMM",
-                    { locale }
-                  )}
-                  onChange={event => setMonths(event.target.value)}
-                  required
-                />
+                <legend>¿En qué meses podrías dar la charla?</legend>
               </label>
+              <Subtext className="form-desc">
+                Cuentanos en que meses podrías venir a dar tu charla, ten en
+                cuenta normalmente los eventos se realizan el segundo martes de
+                cada mes.
+              </Subtext>
+              <input
+                id="months"
+                name="months"
+                type="text"
+                value={months}
+                placeholder={format(new Date().getTime() + ONE_MONTH, "MMMM", {
+                  locale
+                })}
+                onChange={event => setMonths(event.target.value)}
+                required
+              />
             </fieldset>
             <div className="button-container">
               <Button type="submit" invert big>
