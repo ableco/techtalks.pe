@@ -1,6 +1,8 @@
 import App, { Container } from "next/app";
+import Router from "next/router";
 import Head from "next/head";
 import NProgress from "next-nprogress/component";
+import withGA from "next-ga";
 
 class TechTalks extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -47,4 +49,4 @@ class TechTalks extends App {
   }
 }
 
-export default TechTalks;
+export default withGA("UA-132043466-1", Router)(TechTalks);
