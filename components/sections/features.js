@@ -29,7 +29,7 @@ function Features() {
               propuesta de charlas. Si hay algo en lo que eres experto o estás
               aprendiendo, <strong>la mejor forma de aprender es enseñar</strong>.
             </p>
-            <Button href="https://goo.gl/forms/0XRxomZaK9gK13F03">
+            <Button href="/cfp">
               Propón una charla
             </Button>
           </div>

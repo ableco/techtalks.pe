@@ -91,7 +91,7 @@ function Hero() {
             <Name />
             <Slogan />
             <div className="button-container">
-              <Button href="https://goo.gl/forms/0XRxomZaK9gK13F03" invert>
+              <Button href="/cfp" invert>
                 Quiero dar una charla
               </Button>
             </div>
