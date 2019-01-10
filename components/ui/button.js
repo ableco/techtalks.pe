@@ -42,6 +42,7 @@ export function LinkButton({
           padding: 0 2rem;
           height: 2.5rem;
           line-height: 2.5rem;
+          text-decoration: none;
           border-radius: 7px;
           background: black;
           box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.39);
