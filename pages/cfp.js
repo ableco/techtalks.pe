@@ -140,6 +140,8 @@ function CallForPapersPage() {
               />
             </fieldset>
 
+            {!isOnline && <Subtext className="form-desc">¡Oops! Parece que actualmente <em>estás offline</em>, no te preocupes, hemos guardado lo que escribiste en tu navegador <em>¡Puedes volver a entrar cuando estés online de nuevo y enviarlo!</em></Subtext>}
+
             <div className="button-container">
               <Button type="submit" invert big disabled={!isOnline}>
                 Proponer charla
