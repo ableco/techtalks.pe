@@ -15,21 +15,27 @@ export function LinkButton({
     <a href={href} className={cn(className, "button", { invert, big })} {...props}>
       {children}
       <style jsx>{`
-      .button {
+        .button {
           display: inline-block;
           font-size: 1em;
           cursor: pointer;
-          text-decoration: none;
+          text-decoration: underline;
           padding: 0.5rem 0.5rem;
           margin: -0.25rem -0.5rem;
+          border: none;
           border-radius: 7px;
           color: black;
           transition: background 0.2s ease, color 0.2s ease,
-            box-shadow 0.2s ease;
+          box-shadow 0.2s ease;
         }
         .button:hover {
           color: black;
           background: rgba(11, 11, 11, 0.1);
+        }
+        .button[disabled] {
+          color: black;
+          background: rgba(11, 11, 11, 0.1);
+          cursor: not-allowed;
         }
         .button.invert {
           margin: 0;
@@ -45,6 +51,11 @@ export function LinkButton({
         .button.invert:hover {
           background: rgba(11, 11, 11, 0.9);
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.23);
+        }
+        .button.invert[disabled],
+        .button.invert[disabled]:hover {
+          background: rgba(33, 33, 33, 0.9);
+          box-shadow: none;
         }
         .button.invert:active {
           background: rgba(11, 11, 11, 0.9);;
@@ -88,14 +99,20 @@ export function ActionButton({ children, invert, big, className, ...props }) {
           text-decoration: none;
           padding: 0.5rem 0.5rem;
           margin: -0.25rem -0.5rem;
+          border: none;
           border-radius: 7px;
           color: black;
           transition: background 0.2s ease, color 0.2s ease,
-            box-shadow 0.2s ease;
+          box-shadow 0.2s ease;
         }
         .button:hover {
           color: black;
           background: rgba(11, 11, 11, 0.1);
+        }
+        .button[disabled] {
+          color: black;
+          background: rgba(11, 11, 11, 0.1);
+          cursor: not-allowed;
         }
         .button.invert {
           margin: 0;
@@ -111,6 +128,11 @@ export function ActionButton({ children, invert, big, className, ...props }) {
         .button.invert:hover {
           background: rgba(11, 11, 11, 0.9);
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.23);
+        }
+        .button.invert[disabled],
+        .button.invert[disabled]:hover {
+          background: rgba(33, 33, 33, 0.9);
+          box-shadow: none;
         }
         .button.invert:active {
           background: rgba(11, 11, 11, 0.9);;
