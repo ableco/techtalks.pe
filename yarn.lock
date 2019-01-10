@@ -722,6 +722,10 @@
   dependencies:
     react "^16.7.0-alpha.0"
 
+"@rehooks/online-status@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rehooks/online-status/-/online-status-1.0.0.tgz#f071b4ad4136924aac16880916a6d62893667987"
+
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.11.tgz#b988582cafbb2b095e8b556526f30c90d057cace"

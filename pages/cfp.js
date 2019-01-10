@@ -1,6 +1,7 @@
 import Head from "next/head";
 import format from "date-fns/format";
 import locale from "date-fns/locale/es";
+import useOnlineStatus from '@rehooks/online-status';
 
 import Navigation from "../components/navigation";
 import Section from "../components/ui/section";
@@ -17,6 +18,7 @@ function CallForPapersPage() {
   const [email, setEmail] = useLocalState("cfp-email", "");
   const [topic, setTopic] = useLocalState("cfp-topic", "");
   const [months, setMonths] = useLocalState("cfp-months", []);
+  const isOnline = useOnlineStatus();
 
   return (
     <main>
@@ -137,8 +139,9 @@ function CallForPapersPage() {
                 required
               />
             </fieldset>
+
             <div className="button-container">
-              <Button type="submit" invert big>
+              <Button type="submit" invert big disabled={!isOnline}>
                 Proponer charla
               </Button>
             </div>
@@ -167,14 +170,14 @@ function CallForPapersPage() {
 
         fieldset {
           border: none;
-          background: white;
+          background: transparent;
           padding: 1em 1em 1em 3em;
           padding: 0;
           margin: 0 0 5rem;
         }
 
         legend {
-          background: white;
+          background: transparent;
           font-size: 2rem;
           font-weight: 600;
           margin-top: 0;
