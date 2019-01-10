@@ -1,85 +1,11 @@
-import format from "date-fns/format";
-import locale from "date-fns/locale/es";
-
+import dynamic from "next/dynamic";
 import Navigation from "../navigation";
 import Name from "../name";
 import Slogan from "../slogan";
 import Button from "../ui/button";
-import { H2 } from "../ui/heading";
 import Wrapper from "../ui/wrapper";
-import events from "../../data/events.json";
 
-const lastEvent = events[0];
-
-function Talk({ talk, isLast, isFirst }) {
-  return (
-    <>
-      {!isFirst
-        ? isLast
-          ? talk.title[0].toLowerCase() === "i"
-            ? " e "
-            : " y "
-          : ", "
-        : null}
-      <strong>{talk.title}</strong> con{" "}
-      <a href={talk.url} target="_blank" rel="nofollow noopener">
-        {talk.name}
-      </a>
-      <style jsx>{`
-        a {
-          color: black;
-          text-decoration: none;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
-    </>
-  );
-}
-
-function LastEvent() {
-  return (
-    <div className="container">
-      <H2>Próximo Evento</H2>
-      <p>
-        Este{" "}
-        <strong>
-          {format(lastEvent.date, "dddd DD [de] MMMM [a las] h a", { locale })}
-        </strong>{" "}
-        vamos a{" "}
-        {lastEvent.talks.map((talk, index) => (
-          <Talk
-            key={talk.title + talk.name}
-            talk={talk}
-            isFirst={index === 0}
-            isLast={index === lastEvent.talks.length - 1}
-          />
-        ))}
-      </p>
-      <div className="button-container">
-        <Button href={lastEvent.url}>Asistir</Button>
-      </div>
-      <style jsx>{`
-        .container {
-          flex: 1;
-          margin-bottom: 2rem;
-        }
-        p {
-          font-size: 16px;
-          line-height: 1.5;
-        }
-        @media (min-width: 64rem) {
-          .container {
-            max-width: 40%;
-            text-align: right;
-            margin-bottom: 0;
-          }
-        }
-      `}</style>
-    </div>
-  );
-}
+const NextEvent = dynamic(() => import("../next-event"), { ssr: false, loading: () => null });
 
 function Hero() {
   return (
@@ -96,7 +22,7 @@ function Hero() {
               </Button>
             </div>
           </div>
-          {lastEvent.date !== "tbd" && <LastEvent />}
+          <NextEvent />
         </header>
       </Wrapper>
       <style jsx>{`
