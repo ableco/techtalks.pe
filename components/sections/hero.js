@@ -4,8 +4,7 @@ import Name from "../name";
 import Slogan from "../slogan";
 import Button from "../ui/button";
 import Wrapper from "../ui/wrapper";
-
-const NextEvent = dynamic(() => import("../next-event"), { ssr: false, loading: () => null });
+import NextEvent from "../next-event";
 
 function Hero() {
   return (
