@@ -194,7 +194,7 @@ function CallForPapersPage() {
           border: 2px solid black;
           border-radius: 0.5rem;
           box-sizing: border-box;
-          color: gray;
+          color: #666;
           font-size: 1.25rem;
           padding: 0.75em 1.5em;
           transition: 100ms color ease-in-out;
