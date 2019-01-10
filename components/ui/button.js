@@ -12,7 +12,11 @@ export function LinkButton({
   ...props
 }) {
   const a = (
-    <a href={href} className={cn(className, "button", { invert, big })} {...props}>
+    <a
+      href={href}
+      className={cn(className, "button", { invert, big })}
+      {...props}
+    >
       {children}
       <style jsx>{`
         .button {
@@ -26,7 +30,7 @@ export function LinkButton({
           border-radius: 7px;
           color: black;
           transition: background 0.2s ease, color 0.2s ease,
-          box-shadow 0.2s ease;
+            box-shadow 0.2s ease;
         }
         .button:hover {
           color: black;
@@ -59,7 +63,7 @@ export function LinkButton({
           box-shadow: none;
         }
         .button.invert:active {
-          background: rgba(11, 11, 11, 0.9);;
+          background: rgba(11, 11, 11, 0.9);
         }
         .button.big {
           padding: 0.75rem 0.75rem;
@@ -73,7 +77,7 @@ export function LinkButton({
     </a>
   );
 
-  if (parse(href).resource !== "") {
+  if (parse(href).resource === "") {
     return (
       <Link href={href} as={as}>
         {a}
@@ -104,7 +108,7 @@ export function ActionButton({ children, invert, big, className, ...props }) {
           border-radius: 7px;
           color: black;
           transition: background 0.2s ease, color 0.2s ease,
-          box-shadow 0.2s ease;
+            box-shadow 0.2s ease;
         }
         .button:hover {
           color: black;
@@ -136,7 +140,7 @@ export function ActionButton({ children, invert, big, className, ...props }) {
           box-shadow: none;
         }
         .button.invert:active {
-          background: rgba(11, 11, 11, 0.9);;
+          background: rgba(11, 11, 11, 0.9);
         }
         .button.big {
           padding: 0.75rem 0.75rem;
