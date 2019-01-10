@@ -1,4 +1,4 @@
 [build]
   publish = "./out"
-  command = "yarn build && yarn export && yarn lambda:build"
+  command = "yarn build && yarn export"
   functions = "./lambda"
