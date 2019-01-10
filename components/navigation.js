@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { withRouter } from "next/router";
 import cn from "classnames";
-import { parse } from "url";
+import parse from "parse-path";
 
 import IconSpectrum from "./icons/spectrum";
 
@@ -76,7 +76,7 @@ function Item({ href, title, short, content, badge, current }) {
 
   return (
     <li className="item">
-      {parse(href).hostname === null ? <Link href={href}>{a}</Link> : a}
+      {parse(href).resource === "" ? <Link href={href}>{a}</Link> : a}
       <style jsx>{`
         .item {
           display: inline-flex;
