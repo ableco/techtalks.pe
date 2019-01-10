@@ -1,17 +1,44 @@
 [
   {
+    "date": "2019-03-12T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/257968274/",
+    "talks": [
+      {
+        "name": "Javier Olaechea",
+        "url": "https://twitter.com/puercopop",
+        "title": "aprender sobre parser combinators"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-12T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/257968255/",
+    "talks": [
+      {
+        "name": "Hector Paz",
+        "url": "https://twitter.com/hdanniel",
+        "title": "aprender a construir herramientas CLI con Go desde cero"
+      },
+      {
+        "name": "Arturo Puente",
+        "url": "https://twitter.com/arturopuente",
+        "title": "cómo usar Formik para manejar formulario en React.js"
+      }
+    ]
+  },
+  {
     "date": "2019-01-15T19:00:00",
     "url": "https://www.meetup.com/tech-talks-pe/events/257781616/",
     "talks": [
       {
         "name": "Hansy Schmitt",
-        "title": "programar en vivo una aplicación de Flutter desde cero",
-        "url": "https://twitter.com/hacksy_"
+        "url": "https://twitter.com/hacksy_",
+        "title": "programar en vivo una aplicación de Flutter desde cero"
       },
       {
         "name": "Kattya Cuevas",
-        "title": "ver una introducción a React.js",
-        "url": "https://twitter.com/KattyaCuevas"
+        "url": "https://twitter.com/KattyaCuevas",
+        "title": "ver una introducción a React.js"
       }
     ]
   }
