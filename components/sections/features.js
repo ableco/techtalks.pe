@@ -8,17 +8,25 @@ function Features() {
     <Section id="features" inverted>
       <Wrapper center>
         <header>
-          <H2 style={{ margin: 0, marginBottom: "1em" }}>¿Por qué ser parte de Tech Talks?</H2>
+          <H2 style={{ margin: 0, marginBottom: "1em" }}>
+            ¿Por qué ser parte de Tech Talks?
+          </H2>
         </header>
         <div className="row">
           <div className="column">
             <H3>Comunidad de Tecnología</H3>
             <p>
-              Como a tí, nos encanta la tecnología y hablar de ella, <strong>puedes
-              formar parte de nuestra comunidad en Spectrum</strong> donde puedes
-              encontrarnos todos los días para seguir hablando.
+              Como a tí, nos encanta la tecnología y hablar de ella,{" "}
+              <strong>
+                puedes formar parte de nuestra comunidad en Spectrum
+              </strong>{" "}
+              donde puedes encontrarnos todos los días para seguir hablando.
             </p>
-            <Button href="https://spectrum.chat/tech-talks-pe/">
+            <Button
+              href="https://spectrum.chat/tech-talks-pe/"
+              target="_blank"
+              rel="nofollow noopener"
+            >
               Únete a nuestra comunidad
             </Button>
           </div>
@@ -27,11 +35,10 @@ function Features() {
             <p>
               Somos una comunidad con ganas de aprender siempre abierta a nuevas
               propuesta de charlas. Si hay algo en lo que eres experto o estás
-              aprendiendo, <strong>la mejor forma de aprender es enseñar</strong>.
+              aprendiendo,{" "}
+              <strong>la mejor forma de aprender es enseñar</strong>.
             </p>
-            <Button href="/cfp">
-              Propón una charla
-            </Button>
+            <Button href="/cfp">Propón una charla</Button>
           </div>
         </div>
       </Wrapper>
