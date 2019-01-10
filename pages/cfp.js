@@ -1,5 +1,6 @@
 import Head from "next/head";
 import format from "date-fns/format";
+import addMonths from "date-fns/add_months";
 import locale from "date-fns/locale/es";
 import useOnlineStatus from '@rehooks/online-status';
 
@@ -10,8 +11,6 @@ import Wrapper from "../components/ui/wrapper";
 import Button from "../components/ui/button";
 
 import useLocalState from "../lib/use-local-state";
-
-const ONE_MONTH = 2592000000;
 
 function CallForPapersPage() {
   const [name, setName] = useLocalState("cfp-name", "");
@@ -129,7 +128,7 @@ function CallForPapersPage() {
                 type="text"
                 value={months}
                 placeholder={`Puedo dar la charla en ${format(
-                  new Date().getTime() + ONE_MONTH,
+                  addMonths(new Date(), 3),
                   "MMMM",
                   {
                     locale
