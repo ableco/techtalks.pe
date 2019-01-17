@@ -1,6 +1,9 @@
-const withOffline = require('next-offline')
+const withOffline = require("next-offline");
+const withMDX = require("@zeit/next-mdx");
+const compose = require("compose-function");
 
 const config = {
+  pageExtensions: ["js", "md", "mdx"],
   webpack: function(config) {
     const originalEntry = config.entry;
     config.entry = async () => {
@@ -20,4 +23,7 @@ const config = {
   }
 };
 
-module.exports = withOffline(config)
+module.exports = compose(
+  withOffline,
+  withMDX({ extension: /\.mdx?$/ })
+)(config);
