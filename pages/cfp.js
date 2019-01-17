@@ -2,13 +2,15 @@ import Head from "next/head";
 import format from "date-fns/format";
 import addMonths from "date-fns/add_months";
 import locale from "date-fns/locale/es";
-import useOnlineStatus from '@rehooks/online-status';
+import useOnlineStatus from "@rehooks/online-status";
 
 import Navigation from "../components/navigation";
 import Section from "../components/ui/section";
 import Subtext from "../components/ui/subtext";
 import Wrapper from "../components/ui/wrapper";
 import Button from "../components/ui/button";
+import Fieldset from "../components/ui/fieldset";
+import Input from "../components/ui/input";
 
 import useLocalState from "../lib/use-local-state";
 
@@ -57,12 +59,8 @@ function CallForPapersPage() {
           >
             <input type="hidden" name="form-name" value="cfp" />
 
-            <fieldset>
-              <label htmlFor="name">
-                <legend>¿Cómo te llamas?</legend>
-              </label>
-              <Subtext className="form-desc" />
-              <input
+            <Fieldset htmlFor="name" legend="¿Cómo te llamas?">
+              <Input
                 autoFocus
                 id="name"
                 name="name"
@@ -72,17 +70,15 @@ function CallForPapersPage() {
                 onChange={event => setName(event.target.value)}
                 required
               />
-            </fieldset>
+            </Fieldset>
 
-            <fieldset>
-              <label htmlFor="email">
-                <legend>¿A qué email podríamos contactarte?</legend>
-              </label>
-              <Subtext className="form-desc">
-                Nos vamos a contactar a este email para confirmar la fecha de la
-                charla y, si lo necesitas, ayudarte a prepararla.
-              </Subtext>
-              <input
+            <Fieldset
+              htmlFor="email"
+              legend="¿A qué email podríamos contactarte"
+              description="Nos vamos a contactar a este email para confirmar la fecha de la
+                charla y, si lo necesitas, ayudarte a prepararla."
+            >
+              <Input
                 id="email"
                 name="email"
                 type="email"
@@ -91,18 +87,16 @@ function CallForPapersPage() {
                 onChange={event => setEmail(event.target.value)}
                 required
               />
-            </fieldset>
+            </Fieldset>
 
-            <fieldset>
-              <label htmlFor="topic">
-                <legend>¿De qué tema te gustaría hablar?</legend>
-              </label>
-              <Subtext className="form-desc">
-                Cuéntanos más sobre que te gustaría hablar, no importa si ya
+            <Fieldset
+              htmlFor="topic"
+              legend="¿De qué tema te gustaría hablar?"
+              description="Cuéntanos más sobre que te gustaría hablar, no importa si ya
                 tienes todo listo o es apenas una idea ¡Nosotros te ayudamos a
-                prepararte!
-              </Subtext>
-              <input
+                prepararte!"
+            >
+              <Input
                 id="topic"
                 name="topic"
                 type="text"
@@ -111,18 +105,16 @@ function CallForPapersPage() {
                 onChange={event => setTopic(event.target.value)}
                 required
               />
-            </fieldset>
+            </Fieldset>
 
-            <fieldset>
-              <label htmlFor="months">
-                <legend>¿Cuándo podrías dar la charla?</legend>
-              </label>
-              <Subtext className="form-desc">
-                Cuentanos en que meses podrías venir a dar tu charla, ten en
+            <Fieldset
+              htmlFor="months"
+              legend="¿Cuándo podrías dar la charla?"
+              description="Cuentanos en que meses podrías venir a dar tu charla, ten en
                 cuenta normalmente los eventos se realizan el segundo martes de
-                cada mes.
-              </Subtext>
-              <input
+                cada mes."
+            >
+              <Input
                 id="months"
                 name="months"
                 type="text"
@@ -137,9 +129,18 @@ function CallForPapersPage() {
                 onChange={event => setMonths(event.target.value)}
                 required
               />
-            </fieldset>
+            </Fieldset>
 
-            {!isOnline && <Subtext className="form-desc">¡Oops! Parece que actualmente <em>estás offline</em>, no te preocupes, hemos guardado lo que escribiste en tu navegador <em>¡Puedes volver a entrar cuando estés online de nuevo y enviarlo!</em></Subtext>}
+            {!isOnline && (
+              <Subtext className="form-desc">
+                ¡Oops! Parece que actualmente <em>estás offline</em>, no te
+                preocupes, hemos guardado lo que escribiste en tu navegador{" "}
+                <em>
+                  ¡Puedes volver a entrar cuando estés online de nuevo y
+                  enviarlo!
+                </em>
+              </Subtext>
+            )}
 
             <div className="button-container">
               <Button type="submit" invert big disabled={!isOnline}>
@@ -165,44 +166,8 @@ function CallForPapersPage() {
           letter-spacing: -0.05em;
         }
 
-        form {
-          max-width: 1000px;
-        }
-
-        fieldset {
-          border: none;
-          background: transparent;
-          padding: 1em 1em 1em 3em;
-          padding: 0;
-          margin: 0 0 5rem;
-        }
-
-        legend {
-          background: transparent;
-          font-size: 2rem;
-          font-weight: 600;
-          margin-top: 0;
-          margin-bottom: 0rem;
-        }
-
-        fieldset :global(.form-desc) {
-          font-size: 1.125rem;
-        }
-
-        input {
-          border: 2px solid black;
-          border-radius: 0.5rem;
-          box-sizing: border-box;
-          color: #666;
-          font-size: 1.25rem;
-          padding: 0.75em 1.5em;
-          transition: 100ms color ease-in-out;
+        :global(input) {
           width: 100%;
-        }
-
-        input:focus {
-          color: black;
-          outline: none;
         }
 
         .button-container {
@@ -210,7 +175,7 @@ function CallForPapersPage() {
         }
 
         @media (min-width: 64em) {
-          input {
+          :global(input) {
             width: 75%;
           }
         }
