@@ -1,4 +1,4 @@
-import layout from "../layout";
+import layout from "../lib/layout";
 
 export default layout("blog");
 
