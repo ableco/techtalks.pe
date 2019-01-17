@@ -18,6 +18,7 @@ class TechTalks extends App {
     return (
       <Container>
         <Head>
+          <title>Tech Talks - La comunidad de tecnología del Perú</title>
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Tech Talks" />
           <meta
