@@ -83,8 +83,15 @@ function Person({ name, github, twitter, avatar, title }) {
         }
         @media (max-width: 60em) {
           .wrapper {
-            min-width: calc(100% - 5em);
-            max-width: calc(100% - 5em);
+            min-width: calc(100% - 1em);
+            max-width: calc(100% - 1em);
+            margin: 0 1em 1em;
+            padding: 1em 1em 1em 5em;
+          }
+          .avatar {
+            top: 50%;
+            left: 0.5em;
+            transform: translateY(-50%);
           }
         }
       `}</style>

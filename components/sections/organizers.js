@@ -31,7 +31,6 @@ function Organizers() {
           div {
             flex-direction: column;
             align-items: center;
-            margin-right: -1em;
           }
         }
       `}</style>
