@@ -53,6 +53,7 @@ function Person({ name, github, twitter, avatar, title }) {
         }
         .content {
           text-align: left;
+          min-height: 64.5px;
         }
         img {
           object-fit: cover;
