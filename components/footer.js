@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Name from "./name";
 
 function Footer() {
   return (
     <footer>
       <div>
-        <strong className="name">Tech Talks</strong>
+        <div className="name"><Name /></div>
         <nav>
           {/* <Link href="/blog">
             <a>Blog</a>
@@ -36,7 +37,6 @@ function Footer() {
 
         .name {
           font-size: 1.25em;
-          letter-spacing: -0.05em;
           display: block;
           text-align: center;
         }

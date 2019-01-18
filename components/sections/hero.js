@@ -1,6 +1,5 @@
-import dynamic from "next/dynamic";
 import Navigation from "../navigation";
-import Name from "../name";
+import Title from "../title";
 import Slogan from "../slogan";
 import Button from "../ui/button";
 import Wrapper from "../ui/wrapper";
@@ -13,7 +12,7 @@ function Hero() {
       <Wrapper>
         <header>
           <div>
-            <Name />
+            <Title />
             <Slogan />
             <div className="button-container">
               <Button href="/cfp" invert>
