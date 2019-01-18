@@ -18,7 +18,7 @@ function Footer() {
 
       <style jsx>{`
         footer {
-          background: black;
+          background-color: black;
           color: white;
           padding: 2rem 0;
         }
@@ -34,9 +34,6 @@ function Footer() {
         .name {
           font-size: 1.25rem;
           letter-spacing: -0.05em;
-        }
-        a {
-          color: white;
         }
       `}</style>
     </footer>
