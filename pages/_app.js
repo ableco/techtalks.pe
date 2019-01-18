@@ -3,7 +3,7 @@ import Router from "next/router";
 import Head from "next/head";
 import NProgress from "next-nprogress/component";
 import withGA from "next-ga";
-import Button from "../components/ui/button";
+import Footer from "../components/footer";
 
 class TechTalks extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -83,20 +83,7 @@ class TechTalks extends App {
 
         <Component {...pageProps} />
 
-        <footer>
-          <div>
-            <strong className="name">Tech Talks</strong>
-            <nav>
-              {/* <Button href="/blog" invert>Blog</Button> */}
-              <Button href="/cfp" invert>
-                Dar una charla
-              </Button>
-              <Button href="/coc" invert>
-                Código de Conducta
-              </Button>
-            </nav>
-          </div>
-        </footer>
+        <Footer />
 
         <style jsx global>{`
           body {
@@ -104,30 +91,6 @@ class TechTalks extends App {
               Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
               sans-serif;
             margin: 0;
-          }
-        `}</style>
-
-        <style jsx>{`
-          footer {
-            background: black;
-            color: white;
-            padding: 2rem 0;
-          }
-
-          footer > div {
-            max-width: 64rem;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-
-          .name {
-            font-size: 1.25rem;
-            letter-spacing: -0.05em;
-          }
-          a {
-            color: white;
           }
         `}</style>
       </Container>
