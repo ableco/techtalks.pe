@@ -23,7 +23,7 @@ function Slogan({ animate = true } = {}) {
   const [running, setRunning] = useState(true);
   const documentVisibility = useDocumentVisibility();
   const ref = useRef(null);
-  const isOnScreen = useOnScreen(ref, '-40px');
+  const isOnScreen = useOnScreen(ref, "-40px");
 
   useEffect(
     () => {
@@ -58,7 +58,12 @@ function Slogan({ animate = true } = {}) {
           </Head>
         </>
       ) : (
-        <span className="finished">Tu Meetup</span>
+        <>
+          <span className="finished">Tu Meetup</span>
+          <Head>
+            <title>Tech Talks - Tu Meetup</title>
+          </Head>
+        </>
       )}
       <style jsx>{`
         h2 {
