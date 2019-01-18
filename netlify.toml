@@ -1,4 +1,4 @@
 [build]
   publish = "./out"
-  command = "yarn build && yarn export"
+  command = "yarn build && yarn export && netlify-lambda build ./functions"
   functions = "./lambda"
