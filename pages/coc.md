@@ -28,7 +28,7 @@ Si un participante incurre en un comportamiento abusivo, los organizadores del e
 
 Si estás sufriendo algún abuso, adviertes abusos sobre otra persona, o tienes alguna otra preocupación, por favor contacta con algún miembro del personal del evento inmediatamente. El personal del evento puede ser fácilmente identificado, ya que vestirán camisetas del evento.
 
-El personal del evento estará contento de ayudar a los participates a contactar con la seguridad del edificio o con las autoridades locales, proveer escolta o asistir de otra manera a aquellos que estén sufriendo abusos para que se sientan seguros mientras dure el evento. Valoramos tu asistencia.
+El personal del evento estará atento para de ayudar a los participantes a contactar con la seguridad del edificio o con las autoridades locales, proveer escolta o asistir de otra manera a aquellos que estén sufriendo abusos para que se sientan seguros mientras dure el evento. Valoramos tu asistencia.
 
-Esperamos que los participantes sigan estas reglas en el evento, talleres y eventos sociales relacionados con el evento.
+Esperamos que los participantes sigan estas reglas durante el evento y talleres relacionados con el evento.
 
