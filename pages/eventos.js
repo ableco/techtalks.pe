@@ -54,7 +54,7 @@ function Event({ date, url, talks }) {
 
 function PastEvents() {
   return (
-    <Section style={{ paddingTop: 0 }}>
+    <Section style={{ paddingTop: 0, minHeight: "95vh" }}>
       <Navigation />
       <Wrapper>
         <h1>Eventos pasados de <Name /></h1>
