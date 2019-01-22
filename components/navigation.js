@@ -18,6 +18,12 @@ const mainLinks = [
     short: "CFP",
     href: "/cfp",
     title: "¡Da una charla en uno de nuestros eventos!"
+  },
+  {
+    content: "Eventos anteriores",
+    short: "Eventos",
+    href: "/eventos",
+    title: "La lista de todos los eventos pasados de Tech Talks"
   }
 ];
 

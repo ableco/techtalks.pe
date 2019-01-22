@@ -13,6 +13,9 @@ function Footer() {
           <Link href="/cfp">
             <a>Dar una charla</a>
           </Link>
+          <Link href="/eventos">
+            <a>Eventos anteriores</a>
+          </Link>
           <Link href="/coc">
             <a>Código de Conducta</a>
           </Link>

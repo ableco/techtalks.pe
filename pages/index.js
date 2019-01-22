@@ -1,4 +1,3 @@
-import Head from "next/head";
 import dynamic from "next/dynamic";
 
 import Hero from "../components/sections/hero";
