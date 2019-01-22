@@ -39,7 +39,7 @@ function Event({ date, url, talks }) {
       <ul>
         {talks.map(talk => <Talk {...talk} key={talk.name} />)}
       </ul>
-      {url && <p>Más información en <a href={url} rel="nofollow noopener">{url}</a></p>}
+      {url && <p>Más información y fotos en <a href={url} rel="nofollow noopener">{url}</a></p>}
       <style jsx>{`
       article {
         font-size: 1.25rem;
