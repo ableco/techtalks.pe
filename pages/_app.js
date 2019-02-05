@@ -83,7 +83,7 @@ class TechTalks extends App {
 
         <Component {...pageProps} />
 
-        <Footer />
+        {!Component.noFooter && <Footer />}
 
         <style jsx global>{`
           body {
