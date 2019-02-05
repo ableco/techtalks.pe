@@ -17,12 +17,14 @@
       {
         "name": "Javier Olaechea",
         "url": "https://twitter.com/puercopop",
-        "title": "aprender sobre parser combinators"
+        "copy": "aprender sobre parser combinators",
+        "title": "Parser Combinators"
       },
       {
         "name": "Yeison Daza",
         "url": "https://yeisondaza.com/",
-        "title": "cómo crear una cultura de testing para ir rápido y quebrar cosas"
+        "copy": "cómo crear una cultura de testing para ir rápido y quebrar cosas",
+        "title": "Cómo crear una cultura de testing para ir rápido y quebrar cosas"
       }
     ]
   },
@@ -35,6 +37,12 @@
         "url": "https://twitter.com/hdanniel",
         "copy": "aprender a construir herramientas CLI con Go desde cero",
         "title": "Crea herramientas de CLI con Go"
+      },
+      {
+        "name": "Sergio Xalambrí",
+        "url": "https://sergiodxa.com",
+        "copy": "usar el JAMStack y Serverless para crear aplicaciones web",
+        "title": "Aplicaciones Web con Serverless y JAMStack"
       }
     ]
   },
