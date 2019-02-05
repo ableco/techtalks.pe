@@ -29,7 +29,6 @@ function Section({ children, inverted, className, ...props }) {
             #f6f6f6 1px,
             #f6f6f6
           );
-          background-size: 28px 28px;
           box-shadow: inset 0 0 .25em rgba(0, 0, 0, .1);
         }
       `}</style>
