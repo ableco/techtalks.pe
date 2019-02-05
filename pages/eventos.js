@@ -34,16 +34,17 @@ function Event({ date, url, talks }) {
       <h2>{name}</h2>
 
       <p>
-        El día <time dateTime={date}>{format(date, "dddd D [de] MMMM")}</time> tuvimos el <strong>{name}</strong> con siguientes charlas:
+        El día <time dateTime={date}>{format(date, "dddd D [de] MMMM")}</time> tuvimos el <strong>{name}</strong> con las siguientes charlas:
       </p>
       <ul>
         {talks.map(talk => <Talk {...talk} key={talk.name} />)}
       </ul>
       {url && <p>Más información y fotos en <a href={url} rel="nofollow noopener">{url}</a></p>}
       <style jsx>{`
-      article {
-        font-size: 1.25rem;
-      }
+        article {
+          font-size: 1.25rem;
+          margin-bottom: 7.5rem;
+        }
         a {
           color: black;
         }

@@ -3,12 +3,12 @@ function Talk({ talk, isLast, isFirst }) {
     <>
       {!isFirst
         ? isLast
-          ? talk.title[0].toLowerCase() === "i"
+          ? talk.copy[0].toLowerCase() === "i"
             ? " e "
             : " y "
           : ", "
         : null}
-      <strong>{talk.title}</strong> con{" "}
+      <strong>{talk.copy}</strong> con{" "}
       <a href={talk.url} target="_blank" rel="nofollow noopener">
         {talk.name}
       </a>

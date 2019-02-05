@@ -33,7 +33,8 @@
       {
         "name": "Hector Paz",
         "url": "https://twitter.com/hdanniel",
-        "title": "aprender a construir herramientas CLI con Go desde cero"
+        "copy": "aprender a construir herramientas CLI con Go desde cero",
+        "title": "Crea herramientas de CLI con Go"
       }
     ]
   },
@@ -44,12 +45,14 @@
       {
         "name": "Hansy Schmitt",
         "url": "https://twitter.com/hacksy_",
-        "title": "programar en vivo una aplicación de Flutter desde cero"
+        "copy": "programar en vivo una aplicación de Flutter desde cero",
+        "title": "Programación en vivo con Flutter"
       },
       {
         "name": "Kattya Cuevas",
         "url": "https://twitter.com/KattyaCuevas",
-        "title": "ver una introducción a React.js"
+        "copy": "ver una introducción a React",
+        "title": "Introducción a React"
       }
     ]
   }
