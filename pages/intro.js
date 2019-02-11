@@ -6,7 +6,7 @@ import AbleLogo from "../components/logos/able";
 function SlidePresentation() {
   return (
     <section>
-      <h1><Name /></h1>
+      <h1><small><small>Bienvenidos a</small></small><br /><Name /></h1>
       <style jsx>{`
         section {
           text-align: center;
@@ -38,7 +38,7 @@ function SlideSponsors() {
           width: 75%;
         }
         h2 {
-          font-size: 5vw;
+          font-size: 4vw;
         }
         div {
           display: flex;
@@ -57,7 +57,7 @@ function SlideSponsors() {
 function SlideNextEvents() {
   return (
     <section>
-      <h2>Próximos Eventos</h2>
+      <h2>Próximo evento</h2>
       <style jsx>{`
         section {
           text-align: center;
