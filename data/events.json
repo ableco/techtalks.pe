@@ -45,8 +45,8 @@
       {
         "name": "Sergio Xalambrí",
         "url": "https://sergiodxa.com",
-        "copy": "usar el JAMStack y Serverless para crear aplicaciones web",
-        "title": "Aplicaciones Web con Serverless y JAMStack"
+        "copy": "usar Hooks en React",
+        "title": "Introducción a React Hook"
       }
     ]
   },
