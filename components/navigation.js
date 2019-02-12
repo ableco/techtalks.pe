@@ -7,6 +7,30 @@ import IconSpectrum from "./icons/spectrum";
 
 import Badge from "./badge";
 
+function Live() {
+  return (
+    <div>
+      <span /> Live
+      <style jsx>{`
+        div {
+          display: inline-flex;
+          align-items: center;
+        }
+        span {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          line-height: 18px;
+          border-radius: 4px;
+          background-color: red;
+          pointer-events: none;
+          margin-right: .25em;
+        }
+      `}</style>
+    </div>
+  );
+}
+
 const mainLinks = [
   {
     content: "Inicio",
@@ -33,6 +57,11 @@ const extraLinks = [
   //   href: "/blog",
   //   title: "Lee sobre nuestros últimos eventos"
   // },
+  {
+    content: <Live />,
+    href: "/live",
+    title: "¡Estamos en vivo!"
+  },
   {
     content: <IconSpectrum />,
     href: "https://spectrum.chat/tech-talks-pe/",
