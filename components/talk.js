@@ -11,16 +11,16 @@ function Talk({ talk, isLast, isFirst }) {
       <strong>{talk.copy}</strong> con{" "}
       <a href={talk.url} target="_blank" rel="nofollow noopener">
         {talk.name}
+        <style jsx>{`
+          a {
+            color: black;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        `}</style>
       </a>
-      <style jsx>{`
-        a {
-          color: black;
-          text-decoration: none;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
     </>
   );
 }
