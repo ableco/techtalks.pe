@@ -1,5 +1,7 @@
 # Tech Talks
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a3805f52-026b-49d3-b254-487f9a009df7/deploy-status)](https://app.netlify.com/sites/tech-talks/deploys)
+
 ## Usage
 
 Install the dependencies with yarn
