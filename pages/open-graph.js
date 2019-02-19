@@ -40,4 +40,6 @@ function OpenGraphPage() {
   );
 }
 
+OpenGraphPage.noFooter = true;
+
 export default OpenGraphPage;
