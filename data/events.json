@@ -6,10 +6,12 @@
       {
         "name": "Arturo Puente",
         "url": "https://twitter.com/arturopuente",
-        "title": "cómo usar Formik para manejar formulario en React.js"
+        "copy": "aprender sobre como usar Formik para manejar formularios en React.js",
+        "title": "cómo usar Formik para manejar formularios en React.js"
       },
       {
         "name": "Jorge Cano",
+        "copy": "muchas cosas interesantes",
         "url": "https://twitter.com/jorgeucano"
       }
     ]
