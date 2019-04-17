@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import Name from "../components/name";
-import Slogan from "../components/slogan";
+import Name from "../../components/name";
+import Slogan from "../../components/slogan";
 
 function OpenGraphPage() {
   return (
