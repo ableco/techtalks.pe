@@ -1,16 +1,37 @@
 [
   {
+    "date": "2019-05-14T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/260700709/",
+    "talks": [
+      {
+        "name": "Fatima Salas",
+        "url": "https://www.linkedin.com/in/f%C3%A1tima-salas-17928339/",
+        "title": "How NOT to get hired",
+        "copy": "que cosas no hacer en una entrevista"
+      },
+      {
+        "name": "Ernesto Cardenas",
+        "url": "https://www.linkedin.com/in/f%C3%A1tima-salas-17928339/",
+        "title": "Azure",
+        "copy": "sobre la nube de Azure"
+      }
+    ]
+  },
+  {
     "date": "2019-04-09T19:00:00",
-    "url": "",
+    "url": "https://www.meetup.com/tech-talks-pe/events/260257356/",
     "talks": [
       {
         "name": "Arturo Puente",
         "url": "https://twitter.com/arturopuente",
-        "title": "cómo usar Formik para manejar formulario en React.js"
+        "title": "Formularios en React con Formik",
+        "copy": "cómo usar Formik para manejar formulario en React.js"
       },
       {
         "name": "Jorge Cano",
-        "url": "https://twitter.com/jorgeucano"
+        "url": "https://twitter.com/jorgeucano",
+        "title": "Desmitificando Angular",
+        "copy": "qué es Angular y que features tiene"
       }
     ]
   },
