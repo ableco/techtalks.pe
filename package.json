@@ -11,7 +11,8 @@
     "lambda:serve": "netlify-lambda serve ./functions",
     "lambda:build": "netlify-lambda build ./functions",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "g:og": "node scripts/twitter-card.js"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.16.6",
@@ -36,6 +37,9 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-object-assign": "^7.2.0",
-    "netlify-lambda": "^1.1.0"
+    "local-chrome": "^0.1.0",
+    "meow": "^5.0.0",
+    "netlify-lambda": "^1.1.0",
+    "puppeteer-core": "^1.14.0"
   }
 }
