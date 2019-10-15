@@ -3,13 +3,6 @@ import Head from "next/head";
 import Footer from "../components/footer";
 
 class TechTalks extends App {
-  static async getInitialProps({ Component, ctx }) {
-    const pageProps = Component.getInitialProps
-      ? await Component.getInitialProps(ctx)
-      : {};
-    return { pageProps };
-  }
-
   render() {
     const { Component, pageProps } = this.props;
 
