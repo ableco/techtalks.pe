@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
-import useDocumentVisibility from "@rehooks/document-visibility";
 import useOnScreen from "../lib/use-on-screen";
 import shuffle from "../lib/shuffle";
 import slogans from "../data/slogans.json";
@@ -21,7 +20,7 @@ const duration =
 function Slogan({ animate = true } = {}) {
   const [count, setCount] = useState(0);
   const [running, setRunning] = useState(true);
-  const documentVisibility = useDocumentVisibility();
+  const documentVisibility = true;
   const ref = useRef(null);
   const isOnScreen = useOnScreen(ref, "-40px");
 
