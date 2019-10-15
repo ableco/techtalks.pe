@@ -1,8 +1,5 @@
 import App, { Container } from "next/app";
-import Router from "next/router";
 import Head from "next/head";
-import NProgress from "next-nprogress/component";
-import withGA from "next-ga";
 import Footer from "../components/footer";
 
 class TechTalks extends App {
@@ -79,8 +76,6 @@ class TechTalks extends App {
           <link rel="manifest" href="/static/manifest.json" />
         </Head>
 
-        <NProgress color="black" />
-
         <Component {...pageProps} />
 
         {!Component.noFooter && <Footer />}
@@ -98,4 +93,4 @@ class TechTalks extends App {
   }
 }
 
-export default withGA("UA-132043466-1", Router)(TechTalks);
+export default TechTalks;
