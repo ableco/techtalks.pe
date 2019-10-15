@@ -14,15 +14,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^0.16.6",
+    "@mdx-js/loader": "^1.5.1",
+    "@mdx-js/tag": "^0.20.3",
+    "@next/mdx": "^9.1.1",
     "@rehooks/document-visibility": "^1.2.0",
     "@rehooks/online-status": "^1.0.0",
     "@sergiodxa/palette": "^1.0.1",
     "@sergiodxa/ui": "^1.1.2",
-    "@zeit/next-mdx": "^1.2.0",
     "capitalize": "^2.0.0",
     "classnames": "^2.2.6",
-    "compose-function": "^3.0.3",
     "date-fns": "^1.30.1",
     "intersection-observer": "^0.5.1",
     "lodash.memoize": "^4.1.2",

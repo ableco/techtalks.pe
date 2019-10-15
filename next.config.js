@@ -1,8 +1,7 @@
-const withMDX = require("@zeit/next-mdx");
-const compose = require("compose-function");
+const withMDX = require("@next/mdx");
 
 const config = {
-  pageExtensions: ["js", "md", "mdx"],
+  pageExtensions: ["js", "ts", "tsx", "md", "mdx"],
   webpack: function(config) {
     const originalEntry = config.entry;
     config.entry = async () => {
@@ -22,6 +21,4 @@ const config = {
   }
 };
 
-module.exports = compose(
-  withMDX({ extension: /\.mdx?$/ })
-)(config);
+module.exports = withMDX({ extension: /\.mdx?$/ })(config);
