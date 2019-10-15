@@ -1,4 +1,3 @@
-const withOffline = require("next-offline");
 const withMDX = require("@zeit/next-mdx");
 const compose = require("compose-function");
 
@@ -24,6 +23,5 @@ const config = {
 };
 
 module.exports = compose(
-  withOffline,
   withMDX({ extension: /\.mdx?$/ })
 )(config);
