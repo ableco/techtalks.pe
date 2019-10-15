@@ -1,4 +1,4 @@
-import App, { Container } from "next/app";
+import App from "next/app";
 import Head from "next/head";
 import Footer from "../components/footer";
 
@@ -14,7 +14,7 @@ class TechTalks extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
+      <>
         <Head>
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <title>Tech Talks - La comunidad de tecnología del Perú</title>
@@ -88,7 +88,7 @@ class TechTalks extends App {
             margin: 0;
           }
         `}</style>
-      </Container>
+      </>
     );
   }
 }
