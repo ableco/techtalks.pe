@@ -64,7 +64,7 @@ class TechTalks extends App {
           />
           <meta
             name="twitter:image"
-            value="/static/open-graph.png"
+            value="/open-graph.png"
             key="image"
           />
           <meta
@@ -73,7 +73,7 @@ class TechTalks extends App {
             key="summary"
           />
 
-          <link rel="manifest" href="/static/manifest.json" />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
 
         <Component {...pageProps} />
