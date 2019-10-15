@@ -75,8 +75,7 @@ function CallForPapersPage() {
             <Fieldset
               htmlFor="email"
               legend="¿A qué email podríamos contactarte"
-              description="Nos vamos a contactar a este email para confirmar la fecha de la
-                charla y, si lo necesitas, ayudarte a prepararla."
+              description="Nos vamos a contactar a este email para confirmar la fecha de la charla y, si lo necesitas, ayudarte a prepararla."
             >
               <Input
                 id="email"
