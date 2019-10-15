@@ -25,21 +25,10 @@ function CallForPapersPage() {
     <main>
       <Head>
         <title>Propón una charla | Tech Talks</title>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
           content="¡Si hay algo en lo que eres experto, o estás aprendiendo, o de lo que te gustaría hablarnos, eres más que bienvenido!"
         />
-        <meta name="language" content="es" />
-        <meta name="pagename" content="Tech Talks" />
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="robots" content="all" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="apple-mobile-web-app-title" content="Tech Talks" />
-        <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
-        <link rel="manifest" href="/static/manifest.json" />
       </Head>
 
       <Section style={{ paddingTop: 0 }}>
