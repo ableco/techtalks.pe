@@ -1805,10 +1805,10 @@ caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30000989, caniuse-lite@^1.0.300009
   resolved "https://registry.able.co/caniuse-lite/-/caniuse-lite-1.0.30000999.tgz#427253a69ad7bea4aa8d8345687b8eec51ca0e43"
   integrity sha512-1CUyKyecPeksKwXZvYw0tEoaMCo/RwBlXmEtN5vVnabvO0KPd9RQLcaAuR9/1F+KDMv6esmOFWlsXuzDk+8rxg==
 
-capitalize@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.able.co/capitalize/-/capitalize-2.0.0.tgz#61859dd952aba244f03541b23e11470ada097f4b"
-  integrity sha512-HwGrAbSn44Tm5Nz+m02oQHf+9y771rmb/cTbXFcoADy29LFRCj4PhWBT54qxfY2HJBWBplwx17Pd4ek6OFbr/Q==
+capitalize@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/capitalize/-/capitalize-2.0.2.tgz#d66855724fafc09f7f913131f89000a7879e6954"
+  integrity sha512-kX+ZpaqUSx1YcAKnZ6J4HZY0yaYc+RnIVkO+3ckeerj8lW0T+9GmyRekRF3PzH+46HHdsz2ma0S0NfTby/rojA==
 
 ccount@^1.0.3:
   version "1.0.4"
