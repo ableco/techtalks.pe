@@ -14,7 +14,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.5.1",
+    "@mdx-js/loader": "^1.5.8",
     "@mdx-js/tag": "^0.20.3",
     "@next/mdx": "^9.3.1",
     "@rehooks/document-visibility": "^1.2.0",
