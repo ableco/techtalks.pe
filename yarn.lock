@@ -1092,10 +1092,10 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.5.8.tgz#cbadda0378af899c17ce1aa69c677015cab28448"
   integrity sha512-a7Gjjw8bfBSertA/pTWBA/9WKEhgaSxvQE2NTSUzaknrzGFOhs4alZSHh3RHmSFdSWv5pUuzAgsWseMLhWEVkQ==
 
-"@next/mdx@^9.3.3":
-  version "9.3.3"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.3.tgz#c7537a65d70ec7e44c6faa11a1d113663bc803d1"
-  integrity sha512-pUtkBYovCeC2ctsbpH7RoeHP0FkCat+dXKapEEuAckerv6yxRfxI7r5M8AlyVwSTCP0rjF+/SZN+uqrM579rtQ==
+"@next/mdx@^9.3.4":
+  version "9.3.4"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.3.4.tgz#2d6a7c6c98a2d0b0e65dada4687d7ab10b232f22"
+  integrity sha512-FUDkumSQYGq6p2DiKe51RMwQnDYCvee+fkyCwUfBfvLAhk2+V8feXGIrJAcdthVeQPh22joInfrfLePGF3oyLA==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
