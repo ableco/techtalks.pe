@@ -23,7 +23,7 @@
     "@sergiodxa/ui": "^1.1.2",
     "capitalize": "^2.0.3",
     "classnames": "^2.2.6",
-    "date-fns": "^1.30.1",
+    "date-fns": "^2.12.0",
     "intersection-observer": "^0.10.0",
     "lodash.memoize": "^4.1.2",
     "next": "^9.1.1",
