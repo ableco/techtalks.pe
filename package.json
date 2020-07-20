@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-object-assign": "^7.10.4",
-    "netlify-lambda": "^1.1.0"
+    "netlify-lambda": "^2.0.0"
   }
 }
