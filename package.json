@@ -16,7 +16,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.16",
     "@mdx-js/tag": "^0.20.3",
-    "@next/mdx": "^9.5.0",
+    "@next/mdx": "^9.5.1",
     "@rehooks/document-visibility": "^1.2.0",
     "@rehooks/online-status": "^1.0.0",
     "@sergiodxa/palette": "^1.0.1",
