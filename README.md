@@ -2,10 +2,12 @@
 
 ## Usage
 
-Install the dependencies with yarn
+Install the dependencies with yarn Or npm
 
 ```bash
 yarn install
+Or
+npm install
 ```
 
 Then run the project with the following command
