@@ -14,15 +14,36 @@ const events = getPastEvents();
 
 const format = (date, desiredFormat) => formatDate(date, desiredFormat, { locale });
 
-function Talk({ name, url, title }) {
+function Names({ names, urls }) {
   return (
-    <li>
-      {title} con <a href={url} rel="nofollow noopener">{name}</a>
+    <>
+      {Array.isArray(names) && Array.isArray(urls) ? (
+        names.map((name, index) => (
+          <>
+            {index !== 0 && (index === names.length - 1 ? " y " : ", ")}
+            <a href={urls[index]} target="_blank" rel="nofollow noopener">
+              {name}
+            </a>
+          </>
+        ))
+      ) : (
+        <a href={urls} target="_blank" rel="nofollow noopener">
+          {names}
+        </a>
+      )}
       <style jsx>{`
         a {
           color: black;
         }
       `}</style>
+    </>
+  );
+}
+
+function Talk({ name, url, title }) {
+  return (
+    <li>
+      {title} con <Names names={name} urls={url} />
     </li>
   );
 }

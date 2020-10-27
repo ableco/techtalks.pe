@@ -1,13 +1,178 @@
 [
   {
+    "date": "2020-03-10T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/268956655/",
+    "talks": [
+      {
+        "name": "Elizabeth Manrique",
+        "copy": "Cypress",
+        "title": "Cypress",
+        "url": "https://twitter.com/nopitown"
+      },
+      {
+        "name": ["Paul Portillo", "Diego Torres"],
+        "copy": "Los beneficios secretos de un side project",
+        "title": "Los beneficios secretos de un side project",
+        "url": ["https://twitter.com/yummta", "https://twitter.com/diegotc86"]
+      }
+    ]
+  },
+  {
+    "date": "2020-02-11T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/266781195/",
+    "talks": [
+      {
+        "name": "Estefano Castañeda",
+        "copy": "¿Qué necesito para ser UX Designer?",
+        "title": "¿Qué necesito para ser UX Designer?",
+        "url": "https://twitter.com/techfano"
+      },
+      {
+        "name": "Fares Akel",
+        "copy": "Truffle, Ethereum y Smart Contracts",
+        "title": "Truffle, Ethereum y Smart Contracts",
+        "url": "https://github.com/fakel"
+      }
+    ]
+  },
+  {
+    "date": "2019-12-10T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/263015263/",
+    "talks": [
+      {
+        "name": "Pierre Guillen",
+        "copy": "Intro + Animaciones con Flutter",
+        "title": "Intro + Animaciones con Flutter",
+        "url": "https://cerbero.dev"
+      },
+      {
+        "name": "Hansy Schmitt",
+        "copy": "Scratch from Scratch Con Flutter",
+        "title": "Scratch from Scratch Con Flutter",
+        "url": "https://twitter.com/hacksy_"
+      }
+    ]
+  },
+  {
+    "date": "2019-11-12T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/263015252/",
+    "talks": [
+      {
+        "name": "Victoria Ubaldo",
+        "copy": "Primeros pasos en Inteligencia Artificial",
+        "title": "Primeros pasos en Inteligencia Artificial",
+        "url": "https://twitter.com/VikyAle"
+      },
+      {
+        "name": ["Ximena Alvarado", "Nikolas Escuza"],
+        "copy": "Tech Growth: Employment Opportunities for Latin America",
+        "title": "Tech Growth: Employment Opportunities for Latin America",
+        "url": [
+          "https://www.linkedin.com/in/ximena-alvarado-delatorre/",
+          "https://www.linkedin.com/in/nikolasescuza/"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2019-10-15T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/263015244/",
+    "talks": [
+      {
+        "name": "Daniela Huapaya",
+        "copy": "Analítica Digital desde Cero",
+        "title": "Analítica Digital desde Cero",
+        "url": "https://twitter.com/VikyAle"
+      },
+      {
+        "name": "Diego Cuevas",
+        "copy": "Rails + Webpacker + JSON::API Resources",
+        "title": "Rails + Webpacker + JSON::API Resources",
+        "url": "https://twitter.com/DiegoGCuevas"
+      },
+      {
+        "name": "Cristian Granda",
+        "copy": "Hacktoberfest, una oportunidad para colaborar con proyectos open source",
+        "title": "Hacktoberfest, una oportunidad para colaborar con proyectos open source",
+        "url": "https://twitter.com/cristianbgp"
+      }
+    ]
+  },
+  {
+    "date": "2019-08-13T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/263015226/",
+    "talks": [
+      {
+        "name": "Leonidas Esteban",
+        "copy": "Choosing a Frontend Stack and Architecture",
+        "title": "Choosing a Frontend Stack and Architecture",
+        "url": "https://twitter.com/LeonidasEsteban"
+      },
+      {
+        "name": "Juan Carlos Salazar",
+        "copy": "Tips para mejorar tu perfil en LinkedIn",
+        "title": "Tips para mejorar tu perfil en LinkedIn",
+        "url": "https://www.linkedin.com/in/jcsalazarg/"
+      }
+    ]
+  },
+  {
+    "date": "2019-07-09T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/262912770/",
+    "talks": [
+      {
+        "name": "Codeable's First Cohort",
+        "copy": "19 lightning talks de 5 minutos donde vamos a aprender temas de desarrollo web",
+        "title": "19 lightning talks de 5 minutos donde vamos a aprender temas de desarrollo web",
+        "url": "https://www.codeable.la/"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-11T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/260700754/",
+    "talks": [
+      {
+        "name": "Moises Ñañez",
+        "copy": "GRANDStack",
+        "title": "GRANDStack",
+        "url": "https://twitter.com/moisesnandres"
+      },
+      {
+        "name": "Albert Castellano",
+        "copy": "Elixir",
+        "title": "Elixir",
+        "url": "https://twitter.com/acastemoreno"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-14T19:00:00",
+    "url": "https://www.meetup.com/tech-talks-pe/events/260700709/",
+    "talks": [
+      {
+        "name": "Fátima Salas",
+        "copy": "How NOT to get hired",
+        "title": "How NOT to get hired",
+        "url": "https://www.linkedin.com/in/f%C3%A1tima-salas-17928339/"
+      },
+      {
+        "name": "Ernesto Cardenas",
+        "copy": "Introducción a Azure Pipelines y los servicios PaaS de Azure",
+        "title": "Introducción a Azure Pipelines y los servicios PaaS de Azure",
+        "url": "https://twitter.com/fisica3"
+      }
+    ]
+  },
+  {
     "date": "2019-04-09T19:00:00",
-    "url": "",
+    "url": "https://www.meetup.com/tech-talks-pe/events/260257356/",
     "talks": [
       {
         "name": "Arturo Puente",
         "url": "https://twitter.com/arturopuente",
         "copy": "aprender sobre como usar Formik para manejar formularios en React.js",
-        "title": "cómo usar Formik para manejar formularios en React.js"
+        "title": "Cómo usar Formik para manejar formularios en React.js"
       },
       {
         "name": "Jorge Cano",
@@ -30,7 +195,7 @@
       {
         "name": "Yeison Daza",
         "url": "https://yeisondaza.com/",
-        "copy": "cómo crear una cultura de testing para ir rápido y quebrar cosas",
+        "copy": "Cómo crear una cultura de testing para ir rápido y quebrar cosas",
         "title": "Cómo crear una cultura de testing para ir rápido y quebrar cosas"
       }
     ]
