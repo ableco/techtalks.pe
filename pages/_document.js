@@ -1,16 +1,16 @@
-import Document, { Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class TechTalksDocument extends Document {
   static getInitialProps = Document.getInitialProps;
   render() {
     return (
-      <html lang="es">
+      <Html lang="es">
         <Head />
-        <body>
+        <body className="font-sans">
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

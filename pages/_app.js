@@ -1,6 +1,7 @@
 import App from "next/app";
 import Head from "next/head";
-import Footer from "../components/footer";
+
+import "../styles.css";
 
 class TechTalks extends App {
   render() {
@@ -41,7 +42,7 @@ class TechTalks extends App {
           <meta property="og:site_name" content="Tech Talks" />
           <meta property="og:locale" content="es" />
 
-          <meta name="twitter:card" value="summary_large_image" key="type" />
+          <meta name="twitter:card" value="summary" key="type" />
           <meta name="twitter:site" value="@techtalks_pe" key="site" />
           <meta name="twitter:creator" value="@able_co" key="creator" />
           <meta name="twitter:url" value="https://techtalks.pe" key="url" />
@@ -70,17 +71,6 @@ class TechTalks extends App {
         </Head>
 
         <Component {...pageProps} />
-
-        {!Component.noFooter && <Footer />}
-
-        <style jsx global>{`
-          body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-              Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-              sans-serif;
-            margin: 0;
-          }
-        `}</style>
       </>
     );
   }
