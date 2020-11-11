@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ["./pages/**/*.js"],
+  purge: {
+    mode: "layers",
+    layers: ["base", "components", "utilities"],
+    content: ["./src/**/*.tsx"],
+  },
+
   theme: {
     colors: {
       transparent: "transparent",
@@ -20,6 +25,7 @@ module.exports = {
         800: "#252f3f",
         900: "#161e2e",
       },
+
       red: {
         50: "#fdf2f2",
         100: "#fde8e8",
@@ -32,6 +38,7 @@ module.exports = {
         800: "#9b1c1c",
         900: "#771d1d",
       },
+
       orange: {
         50: "#fff8f1",
         100: "#feecdc",
@@ -44,6 +51,7 @@ module.exports = {
         800: "#8a2c0d",
         900: "#73230d",
       },
+
       yellow: {
         50: "#fdfdea",
         100: "#fdf6b2",
@@ -56,6 +64,7 @@ module.exports = {
         800: "#723b13",
         900: "#633112",
       },
+
       green: {
         50: "#f3faf7",
         100: "#def7ec",
@@ -68,6 +77,7 @@ module.exports = {
         800: "#03543f",
         900: "#014737",
       },
+
       teal: {
         50: "#edfafa",
         100: "#d5f5f6",
@@ -80,6 +90,7 @@ module.exports = {
         800: "#05505c",
         900: "#014451",
       },
+
       blue: {
         50: "#ebf5ff",
         100: "#e1effe",
@@ -92,6 +103,7 @@ module.exports = {
         800: "#1e429f",
         900: "#233876",
       },
+
       indigo: {
         50: "#f0f5ff",
         100: "#e5edff",
@@ -104,6 +116,7 @@ module.exports = {
         800: "#42389d",
         900: "#362f78",
       },
+
       purple: {
         50: "#f6f5ff",
         100: "#edebfe",
@@ -116,6 +129,7 @@ module.exports = {
         800: "#5521b5",
         900: "#4a1d96",
       },
+
       pink: {
         50: "#fdf2f8",
         100: "#fce8f3",
