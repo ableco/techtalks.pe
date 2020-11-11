@@ -11,7 +11,7 @@ function Able(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 473 185" {...props}>
       <defs>
-        <path id="able-a" d="M0 0ÞL473 0 473 185 0 185z" />
+        <path id="able-a" d="M0 0L473 0 473 185 0 185z" />
       </defs>
       <g stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
         <mask id="able-b" fill="#fff">
