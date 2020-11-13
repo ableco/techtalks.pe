@@ -20,7 +20,7 @@ export function LinkButton({ href, label, icon, className }: LinkButtonProps) {
     <Link href={href}>
       <a
         className={clsx(
-          "block sm:inline-block font-semibold border transition-colors duration-300 rounded-full py-1 px-8 sm:py-2 sm:px-8 space-x-2 text-center",
+          "block sm:inline-block font-semibold border transition-colors duration-300 rounded-full py-1 px-8 sm:py-2 sm:px-8 space-x-2 text-center select-none",
           className
         )}
       >
@@ -35,7 +35,7 @@ export function FormButton({ label, icon, className }: FormButton) {
   return (
     <button
       className={clsx(
-        "block sm:inline-block font-semibold border transition-colors duration-300 rounded-full py-1 px-8 sm:py-2 sm:px-8 space-x-2 text-center",
+        "block sm:inline-block font-semibold border transition-colors duration-300 rounded-full py-1 px-8 sm:py-2 sm:px-8 space-x-2 text-center select-none",
         className
       )}
     >
