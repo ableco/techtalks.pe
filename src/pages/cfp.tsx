@@ -10,7 +10,7 @@ export default function CFPPage({}: CFPPageProps) {
     <Main className="space-y-12">
       <Nav links={[{ href: "/", content: "Inicio" }]} />
 
-      <header className="container mx-auto px-4 space-y-2">
+      <header className="container mx-auto max-w-screen-sm px-4 space-y-2">
         <h1 className="text-3xl md:text-5xl font-bold leading-none">Enséñanos algo</h1>
         <p className="text-lg text-gray-600">
           ¡Da una charla en Tech Talks y enséñanos algo que sepas, en lo que
