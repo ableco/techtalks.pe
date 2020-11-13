@@ -18,10 +18,10 @@ function HomePage({}: HomePageProps) {
       <header className="container mx-auto px-4 flex justify-center items-center flex-col space-y-12">
         <div className="space-y-3">
           <h1 className="text-2xl sm:text-4xl text-black text-center leading-none tracking-tighter">
-            <TechTalks className="inline-block h-3 sm:h-5 md:h-6 lg:h-8" />
+            <TechTalks className="inline-block h-6 lg:h-8" />
           </h1>
           <h2
-            className="font-extrabold text-2xl sm:text-5xl md:text-6xl lg:text-7xl text-black text-center tracking-tight"
+            className="font-extrabold hidden sm:block sm:text-5xl md:text-6xl lg:text-7xl text-black text-center tracking-tight"
             style={{ lineHeight: ".8" }}
           >
             Crecemos más
