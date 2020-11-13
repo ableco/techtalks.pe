@@ -146,7 +146,10 @@ module.exports = {
 
     extend: {
       colors: {
-        discord: "#7289da",
+        brand: {
+          discord: "#7289da",
+          able: "#1A1917",
+        },
       },
 
       fontSize: {
