@@ -1,3 +1,9 @@
 [build]
   publish = "./out"
   command = "yarn build && yarn export"
+
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/hnVG2wqtFz"
+  status = 301
+  force = true
