@@ -23,7 +23,7 @@
     "@sergiodxa/ui": "^1.1.2",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@tailwindcss/typography": "^0.2.0",
-    "@types/marked": "^1.1.0",
+    "@types/marked": "^1.2.0",
     "autoprefixer": "^10.0.2",
     "capitalize": "^2.0.3",
     "classnames": "^2.2.6",
