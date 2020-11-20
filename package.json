@@ -32,7 +32,7 @@
     "framer-motion": "^2.9.4",
     "intersection-observer": "^0.11.0",
     "lodash.memoize": "^4.1.2",
-    "marked": "^1.2.4",
+    "marked": "^1.2.5",
     "next": "^10.0.2",
     "parse-path": "^4.0.2",
     "react": "^16.14.0",
