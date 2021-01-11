@@ -34,7 +34,7 @@
     "lodash.memoize": "^4.1.2",
     "marked": "^1.2.7",
     "next": "^10.0.5",
-    "parse-path": "^4.0.2",
+    "parse-path": "^4.0.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-icons": "^4.1.0",
