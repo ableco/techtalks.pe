@@ -43,7 +43,7 @@
   "devDependencies": {
     "@babel/plugin-transform-object-assign": "^7.14.5",
     "@types/react": "^17.0.13",
-    "netlify-lambda": "^2.0.10",
+    "netlify-lambda": "^2.0.11",
     "typescript": "^4.3.5"
   }
 }
