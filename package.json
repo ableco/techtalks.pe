@@ -24,7 +24,7 @@
     "@tailwindcss/custom-forms": "^0.2.1",
     "@tailwindcss/typography": "^0.2.0",
     "@types/marked": "^2.0.4",
-    "autoprefixer": "^10.3.0",
+    "autoprefixer": "^10.3.1",
     "capitalize": "^2.0.3",
     "classnames": "^2.3.1",
     "clsx": "^1.1.1",
